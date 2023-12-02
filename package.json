@@ -1,12 +1,12 @@
 {
   "name": "todo-api",
   "main": "index.js",
-  "type": "module",
   "packageManager": "yarn@3.6.3",
   "scripts": {
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
-    "format": "eslint src/**/*.ts --fix"
+    "format": "eslint src/**/*.ts --fix",
+    "start": "yarn build && node dist/src/index.js"
   },
   "devDependencies": {
     "@types/node": "^20.10.1",
@@ -21,5 +21,9 @@
     "hooks": {
       "pre-commit": "yarn lint"
     }
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "graphql": "^16.8.1"
   }
 }
