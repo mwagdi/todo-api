@@ -1,7 +1,6 @@
 import { ApolloServer } from '@apollo/server';
-import { startStandaloneServer } from '@apollo/server/standalone';
-
 import schema from './schema.graphql';
+import { startStandaloneServer } from '@apollo/server/standalone';
 
 const typeDefs = schema.loc?.source.body as string;
 
