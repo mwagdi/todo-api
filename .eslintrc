@@ -2,8 +2,19 @@
   "parser": "@typescript-eslint/parser",
   "extends": ["plugin:@typescript-eslint/recommended"],
   "parserOptions": { "ecmaVersion": 2018, "sourceType": "module" },
+  "plugins": [
+    "@typescript-eslint",
+    "simple-import-sort"
+  ],
   "rules": {
+    "prefer-arrow-callback": "error",
     "semi": "error",
-    "quotes": [2, "single"]
+    "quotes": ["error", "single"],
+    "object-curly-spacing": ["error", "always"],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "max-statements-per-line": ["error", { "max": 1 }],
+    "no-multiple-empty-lines": "error",
+    "no-console": "warn"
   }
 }

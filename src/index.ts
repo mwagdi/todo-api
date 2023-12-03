@@ -1,71 +1,9 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
-const typeDefs = `
-  type User {
-    id: Int!
-    firstName: String!
-    lastName: String!
-    email: String!
-    username: String!
-    tasks: [Task]!
-  }
+import schema from './schema.graphql';
 
-  type Task {
-    id: Int!
-    title: String!
-    description: String
-    owners: [User]!
-    comments: [Comment]
-    createdBy: User!
-  }
-
-  type Comment {
-    id: Int!
-    content: String!
-    createdAt: String!
-    by: User!
-    task: Task!
-  }
-
-  type AuthPayload {
-    token: String!
-    user: User!
-  }
-
-  type Query {
-    users: [User]
-    tasks: [Task]
-    comments: [Comment]
-  }
-
-  type Mutation {
-    signup(input: SignupInput!): AuthPayload
-    login(email: String!, password: String!): AuthPayload
-    deleteUser(id: Int): [User]
-    addTask(task: TaskInput!): Task!
-    addComment(comment: CommentInput!): Comment!
-    deleteComment(id: Int!): Comment!
-  }
-
-  input SignupInput {
-    firstName: String!
-    lastName: String!
-    email: String!
-    username: String!
-    password: String!
-  }
-
-  input TaskInput {
-    title: String!
-    description: String
-  }
-
-  input CommentInput {
-    content: String!
-    task: Int!
-  }
-`;
+const typeDefs = schema.loc?.source.body as string;
 
 const resolvers = {
   // Query: {

@@ -1,0 +1,699 @@
+{
+  "name": "server",
+  "hash": "bef9620247ac373b7345",
+  "version": "5.89.0",
+  "time": 555,
+  "builtAt": 1701624851054,
+  "publicPath": "",
+  "outputPath": "/Users/mahmoudelawadi/Documents/Projects/todo-api/dist",
+  "assetsByChunkName": {
+    "server": [
+      "index.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "index.js",
+      "size": 55227,
+      "emitted": false,
+      "comparedForEmit": true,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 55227
+      },
+      "chunkNames": [
+        "server"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "server"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 17789,
+      "sizes": {
+        "javascript": 17789
+      },
+      "names": [
+        "server"
+      ],
+      "idHints": [],
+      "runtime": [
+        "server"
+      ],
+      "files": [
+        "index.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "1913711559d67e539e35",
+      "childrenByOrder": {},
+      "id": "server",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 6650,
+          "sizes": {
+            "javascript": 6650
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "name": "./src/index.ts",
+          "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./src/index.ts",
+          "issuerId": null,
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "2:23-27",
+              "moduleId": "./src/index.ts",
+              "resolvedModuleId": "./src/index.ts"
+            },
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "2:31-51",
+              "moduleId": "./src/index.ts",
+              "resolvedModuleId": "./src/index.ts"
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./src/index.ts",
+              "loc": "server",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: this is used directly at 2:23-27"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 11055,
+          "sizes": {
+            "javascript": 11055
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/graphql-tag/loader.js!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
+          "name": "./src/schema.graphql",
+          "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "name": "./src/index.ts",
+              "id": "./src/index.ts"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./src/schema.graphql",
+          "issuerId": "./src/index.ts",
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/graphql-tag/loader.js!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
+              "module": "./src/schema.graphql",
+              "moduleName": "./src/schema.graphql",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/graphql-tag/loader.js!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
+              "resolvedModule": "./src/schema.graphql",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "23:6-20",
+              "moduleId": "./src/schema.graphql",
+              "resolvedModuleId": "./src/schema.graphql"
+            },
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./schema.graphql",
+              "loc": "9:41-68",
+              "moduleId": "./src/index.ts",
+              "resolvedModuleId": "./src/index.ts"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 23:6-20"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external commonjs \"@apollo/server\"",
+          "name": "external \"@apollo/server\"",
+          "nameForCondition": null,
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "name": "./src/index.ts",
+              "id": "./src/index.ts"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "@apollo/server",
+          "issuerId": "./src/index.ts",
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "@apollo/server",
+              "loc": "7:17-42",
+              "moduleId": "./src/index.ts",
+              "resolvedModuleId": "./src/index.ts"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external commonjs \"@apollo/server/standalone\"",
+          "name": "external \"@apollo/server/standalone\"",
+          "nameForCondition": null,
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "name": "./src/index.ts",
+              "id": "./src/index.ts"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "@apollo/server/standalone",
+          "issuerId": "./src/index.ts",
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "@apollo/server/standalone",
+              "loc": "8:21-57",
+              "moduleId": "./src/index.ts",
+              "resolvedModuleId": "./src/index.ts"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "server",
+          "request": "./src/index.ts"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 6650,
+      "sizes": {
+        "javascript": 6650
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+      "name": "./src/index.ts",
+      "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/index.ts",
+      "issuerId": null,
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "2:23-27",
+          "moduleId": "./src/index.ts",
+          "resolvedModuleId": "./src/index.ts"
+        },
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "2:31-51",
+          "moduleId": "./src/index.ts",
+          "resolvedModuleId": "./src/index.ts"
+        },
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./src/index.ts",
+          "loc": "server",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: this is used directly at 2:23-27"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external commonjs \"@apollo/server\"",
+      "name": "external \"@apollo/server\"",
+      "nameForCondition": null,
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "@apollo/server",
+      "issuerId": "./src/index.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "@apollo/server",
+          "loc": "7:17-42",
+          "moduleId": "./src/index.ts",
+          "resolvedModuleId": "./src/index.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external commonjs \"@apollo/server/standalone\"",
+      "name": "external \"@apollo/server/standalone\"",
+      "nameForCondition": null,
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "@apollo/server/standalone",
+      "issuerId": "./src/index.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "@apollo/server/standalone",
+          "loc": "8:21-57",
+          "moduleId": "./src/index.ts",
+          "resolvedModuleId": "./src/index.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 11055,
+      "sizes": {
+        "javascript": 11055
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/graphql-tag/loader.js!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
+      "name": "./src/schema.graphql",
+      "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/schema.graphql",
+      "issuerId": "./src/index.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/graphql-tag/loader.js!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
+          "module": "./src/schema.graphql",
+          "moduleName": "./src/schema.graphql",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/graphql-tag/loader.js!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
+          "resolvedModule": "./src/schema.graphql",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "23:6-20",
+          "moduleId": "./src/schema.graphql",
+          "resolvedModuleId": "./src/schema.graphql"
+        },
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./schema.graphql",
+          "loc": "9:41-68",
+          "moduleId": "./src/index.ts",
+          "resolvedModuleId": "./src/index.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 23:6-20"
+      ],
+      "depth": 1
+    }
+  ],
+  "entrypoints": {
+    "server": {
+      "name": "server",
+      "chunks": [
+        "server"
+      ],
+      "assets": [
+        {
+          "name": "index.js",
+          "size": 55227
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 55227,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "server": {
+      "name": "server",
+      "chunks": [
+        "server"
+      ],
+      "assets": [
+        {
+          "name": "index.js",
+          "size": 55227
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 55227,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}
