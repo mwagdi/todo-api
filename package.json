@@ -6,9 +6,13 @@
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
     "format": "eslint src/**/*.ts --fix",
-    "start": "yarn build && node dist/src/index.js"
+    "start": "yarn build && node dist/src/index.js",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "5.0.0",
+    "@graphql-codegen/typescript": "4.0.1",
+    "@graphql-codegen/typescript-resolvers": "4.0.1",
     "@types/node": "^20.10.1",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
