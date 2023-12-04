@@ -1,14 +1,13 @@
 {
   "name": "todo-api",
   "main": "index.js",
-  "packageManager": "yarn@3.6.3",
   "scripts": {
     "build": "webpack --config webpack.config.ts",
     "codegen": "graphql-codegen --config codegen.ts",
-    "dev": "nodemon --watch src -e ts --exec \"yarn start\"",
+    "dev": "nodemon --watch src -e ts --exec \"npm start\"",
     "format": "eslint src/**/*.ts --fix",
     "lint": "eslint src/**/*.ts",
-    "start": "yarn build && node dist/index.js"
+    "start": "npm run build && node dist/index.js"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "5.0.0",
@@ -42,7 +41,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "npm run lint"
     }
   },
   "dependencies": {

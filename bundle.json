@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "hash": "bef9620247ac373b7345",
+  "hash": "4a001811de2e539ff54c",
   "version": "5.89.0",
-  "time": 660,
-  "builtAt": 1701625515115,
+  "time": 444,
+  "builtAt": 1701707923923,
   "publicPath": "",
   "outputPath": "/Users/mahmoudelawadi/Documents/Projects/todo-api/dist",
   "assetsByChunkName": {
@@ -17,7 +17,7 @@
       "name": "index.js",
       "size": 55227,
       "emitted": true,
-      "comparedForEmit": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
@@ -58,7 +58,7 @@
         "index.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "1913711559d67e539e35",
+      "hash": "0c464001c706e6067e11",
       "childrenByOrder": {},
       "id": "server",
       "siblings": [],
