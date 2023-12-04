@@ -15,6 +15,7 @@
     "@graphql-codegen/typescript-resolvers": "4.0.1",
     "@types/copy-webpack-plugin": "^10.1.0",
     "@types/node": "^20.10.1",
+    "@types/pg": "^8.10.9",
     "@types/webpack": "^5.28.4",
     "@types/webpack-bundle-analyzer": "^4.6.2",
     "@types/webpack-node-externals": "^3.0.3",
@@ -46,6 +47,8 @@
   },
   "dependencies": {
     "@apollo/server": "^4.9.5",
-    "graphql": "^16.8.1"
+    "datasource-sql": "^2.1.0",
+    "graphql": "^16.8.1",
+    "pg": "^8.11.3"
   }
 }

@@ -1,11 +1,24 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
+import { Resolvers } from './generated/graphql';
+import MyDatabase from './MyDatabase';
+// import { Client } from 'pg';
 import schema from './schema.graphql';
 
 const typeDefs = schema.loc?.source.body as string;
 
-const resolvers = {
+// const client = new Client({
+//   host: 'localhost',
+//   port: 5432,
+//   database: 'todo_app',
+//   user: 'mahmoudelawadi',
+//   password: 'mahmoudelawadi',
+// });
+
+// client.connect().then(() => console.log('Connected to database'));
+
+const resolvers: Resolvers = {
   // Query: {
   //     users: (parent, args, { prisma }) => {
   //         return prisma.user.findMany({
@@ -140,16 +153,20 @@ const resolvers = {
   //     },
   // },
   Query: {
-    users: () => [
-      {
-        id: 1,
-        firstName: 'Mahmoud',
-        lastName: 'Elawadi',
-        email: 'mahmoudwagdi86@gmail.com',
-        username: 'mwagdi',
-        tasks: [],
-      },
-    ],
+    users: async (parent, args, { db }: Context) => {
+      // const x = await db.;
+      // await db.testQuery();
+      return [
+        {
+          id: 1,
+          firstName: 'Mahmoud',
+          lastName: 'Elawadi',
+          email: 'mahmoudwagdi86@gmail.com',
+          username: 'mwagdi',
+          tasks: [],
+        },
+      ];
+    },
     tasks: () => [
       {
         id: 1,
@@ -179,7 +196,24 @@ const resolvers = {
   },
 };
 
-const server = new ApolloServer({
+const knexConfig = {
+  client: 'pg',
+  connection: {
+    database: 'todo_app',
+    host: 'localhost',
+    user: 'mahmoudelawadi',
+    password: 'mahmoudelawadi',
+  },
+};
+
+// you can also pass a knex instance instead of a configuration object
+const db = new MyDatabase(knexConfig);
+
+interface Context {
+  db: MyDatabase;
+}
+
+const server = new ApolloServer<Context>({
   typeDefs,
   resolvers,
 });
@@ -187,6 +221,7 @@ const server = new ApolloServer({
 (async () => {
   const { url } = await startStandaloneServer(server, {
     listen: { port: 4000 },
+    context: async ({ req }) => ({ db }),
   });
 
   console.log(`🚀  Server ready at: ${url}`);
