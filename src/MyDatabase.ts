@@ -5,7 +5,7 @@ class MyDatabase extends SQLDataSource {
     return this.knex.select('*').from('user');
   }
   testQuery() {
-    return this.knex.insert({ some: 'data' }, ['id']).into('test');
+    return this.knex.insert({ name: 'TEST' }, ['id']).into('test');
   }
 }
 

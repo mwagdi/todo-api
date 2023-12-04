@@ -204,6 +204,9 @@ const knexConfig = {
     user: 'mahmoudelawadi',
     password: 'mahmoudelawadi',
   },
+  migrations: {
+    tableName: 'knex_migrations',
+  },
 };
 
 // you can also pass a knex instance instead of a configuration object
