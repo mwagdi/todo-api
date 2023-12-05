@@ -154,8 +154,6 @@ const resolvers: Resolvers = {
   // },
   Query: {
     users: async (parent, args, { db }: Context) => {
-      // const x = await db.;
-      // await db.testQuery();
       return [
         {
           id: 1,
@@ -196,6 +194,8 @@ const resolvers: Resolvers = {
   },
 };
 
+// postgresql://mahmoudelawadi:mahmoudelawadi@localhost:5432/todo_app
+
 const knexConfig = {
   client: 'pg',
   connection: {
@@ -208,9 +208,9 @@ const knexConfig = {
     tableName: 'knex_migrations',
   },
 };
-
 // you can also pass a knex instance instead of a configuration object
 const db = new MyDatabase(knexConfig);
+db.migrate();
 
 interface Context {
   db: MyDatabase;

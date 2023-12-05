@@ -7,7 +7,8 @@
     "dev": "nodemon --watch src -e ts --exec \"npm start\"",
     "format": "eslint src/**/*.ts --fix",
     "lint": "eslint src/**/*.ts",
-    "start": "npm run build && node dist/index.js"
+    "start": "npm run build && node dist/index.js",
+    "migrate": "knex migrate:make $npm_config_name --migrations-directory migrations"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "5.0.0",

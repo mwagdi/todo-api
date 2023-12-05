@@ -7,6 +7,10 @@ class MyDatabase extends SQLDataSource {
   testQuery() {
     return this.knex.insert({ name: 'TEST' }, ['id']).into('test');
   }
+
+  migrate() {
+    return this.knex.migrate.latest();
+  }
 }
 
 export default MyDatabase;
