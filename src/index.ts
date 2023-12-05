@@ -1,9 +1,9 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
+import db from './db/dbConfig';
+import MyDatabase from './db/MyDatabase';
 import { Resolvers } from './generated/graphql';
-import MyDatabase from './MyDatabase';
-// import { Client } from 'pg';
 import schema from './schema.graphql';
 
 const typeDefs = schema.loc?.source.body as string;
@@ -194,24 +194,6 @@ const resolvers: Resolvers = {
   },
 };
 
-// postgresql://mahmoudelawadi:mahmoudelawadi@localhost:5432/todo_app
-
-const knexConfig = {
-  client: 'pg',
-  connection: {
-    database: 'todo_app',
-    host: 'localhost',
-    user: 'mahmoudelawadi',
-    password: 'mahmoudelawadi',
-  },
-  migrations: {
-    tableName: 'knex_migrations',
-  },
-};
-// you can also pass a knex instance instead of a configuration object
-const db = new MyDatabase(knexConfig);
-db.migrate();
-
 interface Context {
   db: MyDatabase;
 }
@@ -222,9 +204,11 @@ const server = new ApolloServer<Context>({
 });
 
 (async () => {
+  await db.migrate();
+  // await db.unlock();
   const { url } = await startStandaloneServer(server, {
     listen: { port: 4000 },
-    context: async ({ req }) => ({ db }),
+    context: async () => ({ db }),
   });
 
   console.log(`🚀  Server ready at: ${url}`);

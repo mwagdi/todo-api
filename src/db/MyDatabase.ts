@@ -11,6 +11,10 @@ class MyDatabase extends SQLDataSource {
   migrate() {
     return this.knex.migrate.latest();
   }
+
+  unlock() {
+    return this.knex.migrate.forceFreeMigrationsLock();
+  }
 }
 
 export default MyDatabase;

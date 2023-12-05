@@ -8,7 +8,8 @@
     "format": "eslint src/**/*.ts --fix",
     "lint": "eslint src/**/*.ts",
     "start": "npm run build && node dist/index.js",
-    "migrate": "knex migrate:make $npm_config_name --migrations-directory migrations"
+    "migrate": "knex migrate:make $npm_config_name --migrations-directory migrations",
+    "migrate:run": "ts-node src/db/migrate.ts"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "5.0.0",
