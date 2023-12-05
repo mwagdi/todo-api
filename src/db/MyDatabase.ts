@@ -1,11 +1,14 @@
 import { SQLDataSource } from 'datasource-sql';
 
+import { SignupInput, User } from '../generated/graphql';
+
 class MyDatabase extends SQLDataSource {
   getUsers() {
-    return this.knex.select('*').from('user');
+    return this.knex.select('*').from('users');
   }
-  testQuery() {
-    return this.knex.insert({ name: 'TEST' }, ['id']).into('test');
+
+  createUser(input: SignupInput): Promise<User[]> {
+    return this.knex('users').returning(['id', 'first_name', 'last_name', 'email', 'username']).insert(input);
   }
 
   migrate() {

@@ -1,3 +1,4 @@
+import Dotenv from 'dotenv-webpack';
 import path from 'path';
 import { Configuration } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
@@ -46,6 +47,7 @@ const config: Configuration = {
   },
   devtool: 'inline-source-map',
   plugins: [
+    new Dotenv(),
     new BundleAnalyzerPlugin({
       openAnalyzer: false,
       analyzerMode: 'json',

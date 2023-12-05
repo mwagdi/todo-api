@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "hash": "03209946e23c883a9406",
+  "hash": "c9835b8123059cf7ed9a",
   "version": "5.89.0",
-  "time": 506,
-  "builtAt": 1701797903469,
+  "time": 654,
+  "builtAt": 1701804431048,
   "publicPath": "",
   "outputPath": "/Users/mahmoudelawadi/Documents/Projects/todo-api/dist",
   "assetsByChunkName": {
@@ -15,13 +15,13 @@
     {
       "type": "asset",
       "name": "index.js",
-      "size": 60102,
+      "size": 65229,
       "emitted": true,
-      "comparedForEmit": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
-        "size": 60102
+        "size": 65229
       },
       "chunkNames": [
         "server"
@@ -43,9 +43,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 19334,
+      "size": 20732,
       "sizes": {
-        "javascript": 19334
+        "javascript": 20732
       },
       "names": [
         "server"
@@ -58,7 +58,7 @@
         "index.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "efe7c36a6942fb787413",
+      "hash": "f3b0cd54e5ca11db2b53",
       "childrenByOrder": {},
       "id": "server",
       "siblings": [],
@@ -69,21 +69,91 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 535,
+          "size": 585,
           "sizes": {
-            "javascript": 535
+            "javascript": 585
           },
           "built": true,
           "codeGenerated": true,
           "buildTimeExecuted": false,
           "cached": false,
-          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-          "name": "./src/MyDatabase.ts",
-          "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-          "index": 3,
-          "preOrderIndex": 3,
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+          "name": "./src/db/MyDatabase.ts",
+          "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+          "index": 4,
+          "preOrderIndex": 4,
           "index2": 3,
           "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "issuerName": "./src/db/dbConfig.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "name": "./src/index.ts",
+              "id": "./src/index.ts"
+            },
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+              "name": "./src/db/dbConfig.ts",
+              "id": "./src/db/dbConfig.ts"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./src/db/MyDatabase.ts",
+          "issuerId": "./src/db/dbConfig.ts",
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+              "module": "./src/db/dbConfig.ts",
+              "moduleName": "./src/db/dbConfig.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+              "resolvedModule": "./src/db/dbConfig.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./MyDatabase",
+              "loc": "7:37-60",
+              "moduleId": "./src/db/dbConfig.ts",
+              "resolvedModuleId": "./src/db/dbConfig.ts"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "__esModule",
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 731,
+          "sizes": {
+            "javascript": 731
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "name": "./src/db/dbConfig.ts",
+          "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 4,
+          "postOrderIndex": 4,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -100,13 +170,41 @@
           "failed": false,
           "errors": 0,
           "warnings": 0,
-          "id": "./src/MyDatabase.ts",
+          "id": "./src/db/dbConfig.ts",
           "issuerId": "./src/index.ts",
           "chunks": [
             "server"
           ],
           "assets": [],
           "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+              "module": "./src/db/dbConfig.ts",
+              "moduleName": "./src/db/dbConfig.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+              "resolvedModule": "./src/db/dbConfig.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "3:23-27",
+              "moduleId": "./src/db/dbConfig.ts",
+              "resolvedModuleId": "./src/db/dbConfig.ts"
+            },
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+              "module": "./src/db/dbConfig.ts",
+              "moduleName": "./src/db/dbConfig.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+              "resolvedModule": "./src/db/dbConfig.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "3:31-51",
+              "moduleId": "./src/db/dbConfig.ts",
+              "resolvedModuleId": "./src/db/dbConfig.ts"
+            },
             {
               "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
               "module": "./src/index.ts",
@@ -116,27 +214,26 @@
               "type": "cjs require",
               "active": true,
               "explanation": "",
-              "userRequest": "./MyDatabase",
-              "loc": "9:37-60",
+              "userRequest": "./db/dbConfig",
+              "loc": "9:35-59",
               "moduleId": "./src/index.ts",
               "resolvedModuleId": "./src/index.ts"
             }
           ],
           "usedExports": null,
-          "providedExports": [
-            "__esModule",
-            "default"
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: this is used directly at 3:23-27"
           ],
-          "optimizationBailout": [],
           "depth": 1
         },
         {
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 7618,
+          "size": 1208,
           "sizes": {
-            "javascript": 7618
+            "javascript": 1208
           },
           "built": true,
           "codeGenerated": true,
@@ -147,8 +244,8 @@
           "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
           "index": 0,
           "preOrderIndex": 0,
-          "index2": 5,
-          "postOrderIndex": 5,
+          "index2": 9,
+          "postOrderIndex": 9,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -220,9 +317,74 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 11055,
+          "size": 6935,
           "sizes": {
-            "javascript": 11055
+            "javascript": 6935
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "name": "./src/resolvers/index.ts",
+          "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "index": 6,
+          "preOrderIndex": 6,
+          "index2": 7,
+          "postOrderIndex": 7,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "name": "./src/index.ts",
+              "id": "./src/index.ts"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./src/resolvers/index.ts",
+          "issuerId": "./src/index.ts",
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./resolvers",
+              "loc": "10:36-58",
+              "moduleId": "./src/index.ts",
+              "resolvedModuleId": "./src/index.ts"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "__esModule",
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 11063,
+          "sizes": {
+            "javascript": 11063
           },
           "built": true,
           "codeGenerated": true,
@@ -231,10 +393,10 @@
           "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/graphql-tag/loader.js!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
           "name": "./src/schema.graphql",
           "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
-          "index": 5,
-          "preOrderIndex": 5,
-          "index2": 4,
-          "postOrderIndex": 4,
+          "index": 9,
+          "preOrderIndex": 9,
+          "index2": 8,
+          "postOrderIndex": 8,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -428,18 +590,18 @@
           "codeGenerated": true,
           "buildTimeExecuted": false,
           "cached": false,
-          "identifier": "external commonjs \"datasource-sql\"",
-          "name": "external \"datasource-sql\"",
+          "identifier": "external commonjs \"bcryptjs\"",
+          "name": "external \"bcryptjs\"",
           "nameForCondition": null,
-          "index": 4,
-          "preOrderIndex": 4,
-          "index2": 2,
-          "postOrderIndex": 2,
+          "index": 7,
+          "preOrderIndex": 7,
+          "index2": 5,
+          "postOrderIndex": 5,
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-          "issuerName": "./src/MyDatabase.ts",
+          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "issuerName": "./src/resolvers/index.ts",
           "issuerPath": [
             {
               "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
@@ -447,34 +609,171 @@
               "id": "./src/index.ts"
             },
             {
-              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-              "name": "./src/MyDatabase.ts",
-              "id": "./src/MyDatabase.ts"
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+              "name": "./src/resolvers/index.ts",
+              "id": "./src/resolvers/index.ts"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
-          "id": "datasource-sql",
-          "issuerId": "./src/MyDatabase.ts",
+          "id": "bcryptjs",
+          "issuerId": "./src/resolvers/index.ts",
           "chunks": [
             "server"
           ],
           "assets": [],
           "reasons": [
             {
-              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-              "module": "./src/MyDatabase.ts",
-              "moduleName": "./src/MyDatabase.ts",
-              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-              "resolvedModule": "./src/MyDatabase.ts",
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+              "module": "./src/resolvers/index.ts",
+              "moduleName": "./src/resolvers/index.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+              "resolvedModule": "./src/resolvers/index.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "bcryptjs",
+              "loc": "3:19-38",
+              "moduleId": "./src/resolvers/index.ts",
+              "resolvedModuleId": "./src/resolvers/index.ts"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external commonjs \"datasource-sql\"",
+          "name": "external \"datasource-sql\"",
+          "nameForCondition": null,
+          "index": 5,
+          "preOrderIndex": 5,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+          "issuerName": "./src/db/MyDatabase.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "name": "./src/index.ts",
+              "id": "./src/index.ts"
+            },
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+              "name": "./src/db/dbConfig.ts",
+              "id": "./src/db/dbConfig.ts"
+            },
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+              "name": "./src/db/MyDatabase.ts",
+              "id": "./src/db/MyDatabase.ts"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "datasource-sql",
+          "issuerId": "./src/db/MyDatabase.ts",
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+              "module": "./src/db/MyDatabase.ts",
+              "moduleName": "./src/db/MyDatabase.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+              "resolvedModule": "./src/db/MyDatabase.ts",
               "type": "cjs require",
               "active": true,
               "explanation": "",
               "userRequest": "datasource-sql",
               "loc": "3:25-50",
-              "moduleId": "./src/MyDatabase.ts",
-              "resolvedModuleId": "./src/MyDatabase.ts"
+              "moduleId": "./src/db/MyDatabase.ts",
+              "resolvedModuleId": "./src/db/MyDatabase.ts"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 3
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external commonjs \"jsonwebtoken\"",
+          "name": "external \"jsonwebtoken\"",
+          "nameForCondition": null,
+          "index": 8,
+          "preOrderIndex": 8,
+          "index2": 6,
+          "postOrderIndex": 6,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "issuerName": "./src/resolvers/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "name": "./src/index.ts",
+              "id": "./src/index.ts"
+            },
+            {
+              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+              "name": "./src/resolvers/index.ts",
+              "id": "./src/resolvers/index.ts"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "jsonwebtoken",
+          "issuerId": "./src/resolvers/index.ts",
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+              "module": "./src/resolvers/index.ts",
+              "moduleName": "./src/resolvers/index.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+              "resolvedModule": "./src/resolvers/index.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "jsonwebtoken",
+              "loc": "4:23-46",
+              "moduleId": "./src/resolvers/index.ts",
+              "resolvedModuleId": "./src/resolvers/index.ts"
             }
           ],
           "usedExports": null,
@@ -499,9 +798,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 7618,
+      "size": 1208,
       "sizes": {
-        "javascript": 7618
+        "javascript": 1208
       },
       "built": true,
       "codeGenerated": true,
@@ -512,8 +811,8 @@
       "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
       "index": 0,
       "preOrderIndex": 0,
-      "index2": 5,
-      "postOrderIndex": 5,
+      "index2": 9,
+      "postOrderIndex": 9,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -704,21 +1003,21 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 535,
+      "size": 731,
       "sizes": {
-        "javascript": 535
+        "javascript": 731
       },
       "built": true,
       "codeGenerated": true,
       "buildTimeExecuted": false,
       "cached": false,
-      "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-      "name": "./src/MyDatabase.ts",
-      "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
+      "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+      "name": "./src/db/dbConfig.ts",
+      "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
       "index": 3,
       "preOrderIndex": 3,
-      "index2": 3,
-      "postOrderIndex": 3,
+      "index2": 4,
+      "postOrderIndex": 4,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -734,7 +1033,98 @@
       "failed": false,
       "errors": 0,
       "warnings": 0,
-      "id": "./src/MyDatabase.ts",
+      "id": "./src/db/dbConfig.ts",
+      "issuerId": "./src/index.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "module": "./src/db/dbConfig.ts",
+          "moduleName": "./src/db/dbConfig.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "resolvedModule": "./src/db/dbConfig.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "3:23-27",
+          "moduleId": "./src/db/dbConfig.ts",
+          "resolvedModuleId": "./src/db/dbConfig.ts"
+        },
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "module": "./src/db/dbConfig.ts",
+          "moduleName": "./src/db/dbConfig.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "resolvedModule": "./src/db/dbConfig.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "3:31-51",
+          "moduleId": "./src/db/dbConfig.ts",
+          "resolvedModuleId": "./src/db/dbConfig.ts"
+        },
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./db/dbConfig",
+          "loc": "9:35-59",
+          "moduleId": "./src/index.ts",
+          "resolvedModuleId": "./src/index.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: this is used directly at 3:23-27"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 6935,
+      "sizes": {
+        "javascript": 6935
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+      "name": "./src/resolvers/index.ts",
+      "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+      "index": 6,
+      "preOrderIndex": 6,
+      "index2": 7,
+      "postOrderIndex": 7,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/resolvers/index.ts",
       "issuerId": "./src/index.ts",
       "chunks": [
         "server"
@@ -750,8 +1140,8 @@
           "type": "cjs require",
           "active": true,
           "explanation": "",
-          "userRequest": "./MyDatabase",
-          "loc": "9:37-60",
+          "userRequest": "./resolvers",
+          "loc": "10:36-58",
           "moduleId": "./src/index.ts",
           "resolvedModuleId": "./src/index.ts"
         }
@@ -768,9 +1158,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 11055,
+      "size": 11063,
       "sizes": {
-        "javascript": 11055
+        "javascript": 11063
       },
       "built": true,
       "codeGenerated": true,
@@ -779,10 +1169,10 @@
       "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/graphql-tag/loader.js!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
       "name": "./src/schema.graphql",
       "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/schema.graphql",
-      "index": 5,
-      "preOrderIndex": 5,
-      "index2": 4,
-      "postOrderIndex": 4,
+      "index": 9,
+      "preOrderIndex": 9,
+      "index2": 8,
+      "postOrderIndex": 8,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -843,6 +1233,205 @@
     },
     {
       "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 585,
+      "sizes": {
+        "javascript": 585
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+      "name": "./src/db/MyDatabase.ts",
+      "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+      "index": 4,
+      "preOrderIndex": 4,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+      "issuerName": "./src/db/dbConfig.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        },
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "name": "./src/db/dbConfig.ts",
+          "id": "./src/db/dbConfig.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/db/MyDatabase.ts",
+      "issuerId": "./src/db/dbConfig.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "module": "./src/db/dbConfig.ts",
+          "moduleName": "./src/db/dbConfig.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "resolvedModule": "./src/db/dbConfig.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./MyDatabase",
+          "loc": "7:37-60",
+          "moduleId": "./src/db/dbConfig.ts",
+          "resolvedModuleId": "./src/db/dbConfig.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "__esModule",
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external commonjs \"bcryptjs\"",
+      "name": "external \"bcryptjs\"",
+      "nameForCondition": null,
+      "index": 7,
+      "preOrderIndex": 7,
+      "index2": 5,
+      "postOrderIndex": 5,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+      "issuerName": "./src/resolvers/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        },
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "name": "./src/resolvers/index.ts",
+          "id": "./src/resolvers/index.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "bcryptjs",
+      "issuerId": "./src/resolvers/index.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "bcryptjs",
+          "loc": "3:19-38",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external commonjs \"jsonwebtoken\"",
+      "name": "external \"jsonwebtoken\"",
+      "nameForCondition": null,
+      "index": 8,
+      "preOrderIndex": 8,
+      "index2": 6,
+      "postOrderIndex": 6,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+      "issuerName": "./src/resolvers/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        },
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "name": "./src/resolvers/index.ts",
+          "id": "./src/resolvers/index.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "jsonwebtoken",
+      "issuerId": "./src/resolvers/index.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "jsonwebtoken",
+          "loc": "4:23-46",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
       "moduleType": "javascript/dynamic",
       "layer": null,
       "size": 42,
@@ -856,14 +1445,14 @@
       "identifier": "external commonjs \"datasource-sql\"",
       "name": "external \"datasource-sql\"",
       "nameForCondition": null,
-      "index": 4,
-      "preOrderIndex": 4,
+      "index": 5,
+      "preOrderIndex": 5,
       "index2": 2,
       "postOrderIndex": 2,
       "optional": false,
       "orphan": false,
-      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-      "issuerName": "./src/MyDatabase.ts",
+      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+      "issuerName": "./src/db/MyDatabase.ts",
       "issuerPath": [
         {
           "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
@@ -871,40 +1460,45 @@
           "id": "./src/index.ts"
         },
         {
-          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-          "name": "./src/MyDatabase.ts",
-          "id": "./src/MyDatabase.ts"
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/dbConfig.ts",
+          "name": "./src/db/dbConfig.ts",
+          "id": "./src/db/dbConfig.ts"
+        },
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+          "name": "./src/db/MyDatabase.ts",
+          "id": "./src/db/MyDatabase.ts"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "datasource-sql",
-      "issuerId": "./src/MyDatabase.ts",
+      "issuerId": "./src/db/MyDatabase.ts",
       "chunks": [
         "server"
       ],
       "assets": [],
       "reasons": [
         {
-          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-          "module": "./src/MyDatabase.ts",
-          "moduleName": "./src/MyDatabase.ts",
-          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/MyDatabase.ts",
-          "resolvedModule": "./src/MyDatabase.ts",
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+          "module": "./src/db/MyDatabase.ts",
+          "moduleName": "./src/db/MyDatabase.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/db/MyDatabase.ts",
+          "resolvedModule": "./src/db/MyDatabase.ts",
           "type": "cjs require",
           "active": true,
           "explanation": "",
           "userRequest": "datasource-sql",
           "loc": "3:25-50",
-          "moduleId": "./src/MyDatabase.ts",
-          "resolvedModuleId": "./src/MyDatabase.ts"
+          "moduleId": "./src/db/MyDatabase.ts",
+          "resolvedModuleId": "./src/db/MyDatabase.ts"
         }
       ],
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [],
-      "depth": 2
+      "depth": 3
     }
   ],
   "entrypoints": {
@@ -916,11 +1510,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 60102
+          "size": 65229
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 60102,
+      "assetsSize": 65229,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -938,11 +1532,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 60102
+          "size": 65229
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 60102,
+      "assetsSize": 65229,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
