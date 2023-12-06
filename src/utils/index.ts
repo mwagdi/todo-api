@@ -1,5 +1,6 @@
 import { compare } from 'bcryptjs';
 import { verify } from 'jsonwebtoken';
+import { User } from '../generated/graphql';
 
 export interface AuthTokenPayload {
   userId: number;
@@ -20,13 +21,13 @@ export const checkIfUserLoggedIn = (userId: number) => {
 };
 
 export const checkUserLogin = async (
-  userPassword: string,
+  user: Omit<User, 'tasks'> & { password: string },
   password: string,
 ) => {
   const errorMessage = 'Email or Password is incorrect';
 
-  if (!userPassword) throw new Error(errorMessage);
+  if (!user) throw new Error(errorMessage);
 
-  const valid = await compare(password, userPassword);
+  const valid = await compare(password, user.password);
   if (!valid) throw new Error(errorMessage);
 };

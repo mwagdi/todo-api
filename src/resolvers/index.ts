@@ -1,7 +1,7 @@
 import { hash } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 
-import { Resolvers } from '../generated/graphql';
+import { Resolvers, User } from '../generated/graphql';
 import { Context } from '../types';
 import { checkUserLogin } from '../utils';
 
@@ -170,10 +170,11 @@ const resolvers: Resolvers = {
     },
     login: async (parent, { email, password }, { db }) => {
       try {
-        const { password: userPassword, ...user } =
-          await db.getUserByEmail(email);
+        const userWithPassword = await db.getUserByEmail(email);
 
-        await checkUserLogin(userPassword, password);
+        await checkUserLogin(userWithPassword, password);
+
+        const { password: __, ...user } = userWithPassword;
         const token = sign(
           { userId: user.id },
           process.env.APP_SECRET as string,
