@@ -29,19 +29,6 @@ const resolvers: Resolvers = {
   //             throw new Error(error.message);
   //         }
   //     },
-  //     deleteComment: async (parent, { id }, { prisma, userId }) => {
-  //         try {
-  //             checkIfUserLoggedIn(userId);
-  //
-  //             return await prisma.comment.delete({
-  //                 where: {
-  //                     id,
-  //                 },
-  //             });
-  //         } catch (error) {
-  //             throw new Error(error.message);
-  //         }
-  //     },
   // },
   Query: {
     users: async (parent, args, { db }: Context) => await db.getUsers(),
@@ -143,6 +130,18 @@ const resolvers: Resolvers = {
         });
 
         return newComment;
+      } catch (error) {
+        throw new Error(
+          error instanceof Error ? error.message : 'Unknown error',
+        );
+      }
+    },
+    deleteComment: async (parent, { id }, { db, userId }) => {
+      try {
+        checkIfUserLoggedIn(userId);
+
+        const [deleted] = await db.deleteComment(id);
+        return deleted;
       } catch (error) {
         throw new Error(
           error instanceof Error ? error.message : 'Unknown error',

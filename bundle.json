@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "hash": "cd9694962f427ad43d87",
+  "hash": "0ae54a9220c772680b4a",
   "version": "5.89.0",
-  "time": 545,
-  "builtAt": 1701882000649,
+  "time": 548,
+  "builtAt": 1701882233230,
   "publicPath": "",
   "outputPath": "/Users/mahmoudelawadi/Documents/Projects/todo-api/dist",
   "assetsByChunkName": {
@@ -15,13 +15,13 @@
     {
       "type": "asset",
       "name": "index.js",
-      "size": 66799,
-      "emitted": false,
-      "comparedForEmit": true,
+      "size": 66922,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
-        "size": 66799
+        "size": 66922
       },
       "chunkNames": [
         "server"
@@ -43,9 +43,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 21159,
+      "size": 21226,
       "sizes": {
-        "javascript": 21159
+        "javascript": 21226
       },
       "names": [
         "server"
@@ -58,7 +58,7 @@
         "index.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "1a5a2244bb27da9f5184",
+      "hash": "593f3aaeac44b826efeb",
       "childrenByOrder": {},
       "id": "server",
       "siblings": [],
@@ -69,9 +69,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 1408,
+          "size": 1513,
           "sizes": {
-            "javascript": 1408
+            "javascript": 1513
           },
           "built": true,
           "codeGenerated": true,
@@ -317,9 +317,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 4816,
+          "size": 4778,
           "sizes": {
-            "javascript": 4816
+            "javascript": 4778
           },
           "built": true,
           "codeGenerated": true,
@@ -1203,9 +1203,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 4816,
+      "size": 4778,
       "sizes": {
-        "javascript": 4816
+        "javascript": 4778
       },
       "built": true,
       "codeGenerated": true,
@@ -1424,9 +1424,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 1408,
+      "size": 1513,
       "sizes": {
-        "javascript": 1408
+        "javascript": 1513
       },
       "built": true,
       "codeGenerated": true,
@@ -1727,11 +1727,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 66799
+          "size": 66922
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 66799,
+      "assetsSize": 66922,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1749,11 +1749,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 66799
+          "size": 66922
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 66799,
+      "assetsSize": 66922,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,

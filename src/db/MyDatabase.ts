@@ -39,6 +39,10 @@ class MyDatabase extends SQLDataSource {
     return this.knex('comments').returning('*').insert(comment);
   }
 
+  deleteComment(id: number) {
+    return this.knex('comments').returning('*').where('id', id).del();
+  }
+
   getUserByEmail(email: string) {
     return this.knex.select('*').from('users').where('email', email).first();
   }
