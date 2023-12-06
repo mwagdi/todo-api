@@ -3,13 +3,13 @@
  * @returns { Promise<void> }
  */
 exports.up = function (knex) {
-  return knex.schema.createTable('comments', (table) => {
+  return knex.schema.createTable('tasks', (table) => {
     table.increments('id');
-    table.string('content').notNullable();
+    table.string('title').notNullable();
+    table.string('description').notNullable();
     table.integer('user_id').unsigned().notNullable();
     table.foreign('user_id').references('users.id');
-    table.integer('task_id').unsigned().notNullable();
-    table.foreign('task_id').references('tasks.id');
+    table.string('status').notNullable().defaultTo('todo');
     table.timestamps(true, true);
   });
 };
@@ -18,6 +18,4 @@ exports.up = function (knex) {
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.down = function (knex) {
-  return knex.schema.dropTable('comments');
-};
+exports.down = function (knex) {};

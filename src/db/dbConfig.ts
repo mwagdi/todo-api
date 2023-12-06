@@ -1,4 +1,8 @@
+import { config } from 'dotenv';
+
 import MyDatabase from './MyDatabase';
+
+config();
 
 const knexConfig = {
   client: 'pg',
@@ -12,5 +16,5 @@ const knexConfig = {
     tableName: 'knex_migrations',
   },
 };
-// you can also pass a knex instance instead of a configuration object
+
 export default new MyDatabase(knexConfig);

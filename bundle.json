@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "hash": "acb9fc9a570261a7bbd6",
+  "hash": "7158f0ccee0a8f32cb99",
   "version": "5.89.0",
-  "time": 1239,
-  "builtAt": 1701887825077,
+  "time": 1030,
+  "builtAt": 1701897582177,
   "publicPath": "",
   "outputPath": "/usr/app/dist",
   "assetsByChunkName": {
@@ -15,13 +15,13 @@
     {
       "type": "asset",
       "name": "index.js",
-      "size": 65612,
-      "emitted": false,
-      "comparedForEmit": true,
+      "size": 65739,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
-        "size": 65612
+        "size": 65739
       },
       "chunkNames": [
         "server"
@@ -43,9 +43,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 20772,
+      "size": 20819,
       "sizes": {
-        "javascript": 20772
+        "javascript": 20819
       },
       "names": [
         "server"
@@ -58,7 +58,7 @@
         "index.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "07ebedfdb77cc9c18a7d",
+      "hash": "ced16642c7d48c5408fe",
       "childrenByOrder": {},
       "id": "server",
       "siblings": [],
@@ -231,9 +231,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 1314,
+          "size": 1361,
           "sizes": {
-            "javascript": 1314
+            "javascript": 1361
           },
           "built": true,
           "codeGenerated": true,
@@ -907,9 +907,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 1314,
+      "size": 1361,
       "sizes": {
-        "javascript": 1314
+        "javascript": 1361
       },
       "built": true,
       "codeGenerated": true,
@@ -1727,11 +1727,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 65612
+          "size": 65739
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 65612,
+      "assetsSize": 65739,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1749,11 +1749,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 65612
+          "size": 65739
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 65612,
+      "assetsSize": 65739,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
