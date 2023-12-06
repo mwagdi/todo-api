@@ -1,18 +1,18 @@
 version: '3.8'
 services:
   api:
-    container_name: api
+    container_name: my-todo-api
     restart: always
     build: .
     ports:
-      - ${PORT}:${PORT}
+      - '4000:4000'
     depends_on:
       - db
     volumes:
-      - .:/usr/src/app
+      - .:/usr/app
 
   db:
-    container_name: postgres
+    container_name: todo-postgres
     image: postgres
     ports:
       - '5433:${DB_PORT}'
