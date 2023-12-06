@@ -14,7 +14,7 @@ export const decodeAuthHeader = (authHeader: string) => {
     throw new Error('No token found');
   }
 
-  return verify(token, process.env.APP_SECRET as string);
+  return verify(token, process.env.APP_SECRET as string) as AuthTokenPayload;
 };
 
 export const checkIfUserLoggedIn = (userId: number) => {

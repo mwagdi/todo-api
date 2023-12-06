@@ -5,6 +5,7 @@ import db from './db/dbConfig';
 import resolvers from './resolvers';
 import schema from './schema.graphql';
 import { Context } from './types';
+import { decodeAuthHeader } from './utils';
 
 const typeDefs = schema.loc?.source.body as string;
 
@@ -16,7 +17,17 @@ const server = new ApolloServer<Context>({
 (async () => {
   const { url } = await startStandaloneServer(server, {
     listen: { port: 4000 },
-    context: async () => ({ db }),
+    context: async ({ req }) => {
+      const token =
+        req && req.headers.authorization
+          ? decodeAuthHeader(req.headers.authorization)
+          : null;
+
+      return {
+        db,
+        userId: token?.userId,
+      };
+    },
   });
 
   console.log(`🚀  Server ready at: ${url}`);

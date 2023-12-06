@@ -3,7 +3,7 @@ import { sign } from 'jsonwebtoken';
 
 import { Resolvers } from '../generated/graphql';
 import { Context } from '../types';
-import { checkUserLogin } from '../utils';
+import { checkIfUserLoggedIn, checkUserLogin } from '../utils';
 
 const resolvers: Resolvers = {
   // Query: {
@@ -190,6 +190,25 @@ const resolvers: Resolvers = {
         );
       }
     },
+    // addTask: async (parent, { task }, { prisma, userId }) => {
+    //   try {
+    //     checkIfUserLoggedIn(userId);
+    //
+    //     return await prisma.task.create({
+    //       data: {
+    //         ...task,
+    //         owners: {
+    //           connect: [{ id: userId }],
+    //         },
+    //         createdBy: {
+    //           connect: { id: userId },
+    //         },
+    //       },
+    //     });
+    //   } catch (error) {
+    //     throw new Error(error.message);
+    //   }
+    // },
   },
 };
 

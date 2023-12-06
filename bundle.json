@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "hash": "c543e7f1143e9eb45849",
+  "hash": "8af22bc38933d9d23ed6",
   "version": "5.89.0",
-  "time": 597,
-  "builtAt": 1701857002836,
+  "time": 628,
+  "builtAt": 1701857909744,
   "publicPath": "",
   "outputPath": "/Users/mahmoudelawadi/Documents/Projects/todo-api/dist",
   "assetsByChunkName": {
@@ -15,13 +15,13 @@
     {
       "type": "asset",
       "name": "index.js",
-      "size": 67663,
+      "size": 70274,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
-        "size": 67663
+        "size": 70274
       },
       "chunkNames": [
         "server"
@@ -43,9 +43,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 21419,
+      "size": 22354,
       "sizes": {
-        "javascript": 21419
+        "javascript": 22354
       },
       "names": [
         "server"
@@ -58,7 +58,7 @@
         "index.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "8e26f9f6e958d48547fe",
+      "hash": "7d410ae645fe0f208680",
       "childrenByOrder": {},
       "id": "server",
       "siblings": [],
@@ -231,9 +231,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 970,
+          "size": 1314,
           "sizes": {
-            "javascript": 970
+            "javascript": 1314
           },
           "built": true,
           "codeGenerated": true,
@@ -317,9 +317,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 6528,
+          "size": 7119,
           "sizes": {
-            "javascript": 6528
+            "javascript": 7119
           },
           "built": true,
           "codeGenerated": true,
@@ -479,30 +479,39 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
-          "issuerName": "./src/resolvers/index.ts",
+          "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "issuerName": "./src/index.ts",
           "issuerPath": [
             {
               "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
               "name": "./src/index.ts",
               "id": "./src/index.ts"
-            },
-            {
-              "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
-              "name": "./src/resolvers/index.ts",
-              "id": "./src/resolvers/index.ts"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "./src/utils/index.ts",
-          "issuerId": "./src/resolvers/index.ts",
+          "issuerId": "./src/index.ts",
           "chunks": [
             "server"
           ],
           "assets": [],
           "reasons": [
+            {
+              "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+              "resolvedModule": "./src/index.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./utils",
+              "loc": "12:16-34",
+              "moduleId": "./src/index.ts",
+              "resolvedModuleId": "./src/index.ts"
+            },
             {
               "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
               "module": "./src/resolvers/index.ts",
@@ -526,7 +535,7 @@
             "decodeAuthHeader"
           ],
           "optimizationBailout": [],
-          "depth": 2
+          "depth": 1
         },
         {
           "type": "module",
@@ -898,9 +907,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 970,
+      "size": 1314,
       "sizes": {
-        "javascript": 970
+        "javascript": 1314
       },
       "built": true,
       "codeGenerated": true,
@@ -1194,9 +1203,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 6528,
+      "size": 7119,
       "sizes": {
-        "javascript": 6528
+        "javascript": 7119
       },
       "built": true,
       "codeGenerated": true,
@@ -1250,6 +1259,86 @@
       "providedExports": [
         "__esModule",
         "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 1052,
+      "sizes": {
+        "javascript": 1052
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/utils/index.ts",
+      "name": "./src/utils/index.ts",
+      "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/utils/index.ts",
+      "index": 9,
+      "preOrderIndex": 9,
+      "index2": 7,
+      "postOrderIndex": 7,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/utils/index.ts",
+      "issuerId": "./src/index.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
+          "resolvedModule": "./src/index.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./utils",
+          "loc": "12:16-34",
+          "moduleId": "./src/index.ts",
+          "resolvedModuleId": "./src/index.ts"
+        },
+        {
+          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../utils",
+          "loc": "5:16-35",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "__esModule",
+        "checkIfUserLoggedIn",
+        "checkUserLogin",
+        "decodeAuthHeader"
       ],
       "optimizationBailout": [],
       "depth": 1
@@ -1560,77 +1649,6 @@
     },
     {
       "type": "module",
-      "moduleType": "javascript/auto",
-      "layer": null,
-      "size": 1052,
-      "sizes": {
-        "javascript": 1052
-      },
-      "built": true,
-      "codeGenerated": true,
-      "buildTimeExecuted": false,
-      "cached": false,
-      "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/utils/index.ts",
-      "name": "./src/utils/index.ts",
-      "nameForCondition": "/Users/mahmoudelawadi/Documents/Projects/todo-api/src/utils/index.ts",
-      "index": 9,
-      "preOrderIndex": 9,
-      "index2": 7,
-      "postOrderIndex": 7,
-      "cacheable": true,
-      "optional": false,
-      "orphan": false,
-      "issuer": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
-      "issuerName": "./src/resolvers/index.ts",
-      "issuerPath": [
-        {
-          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/index.ts",
-          "name": "./src/index.ts",
-          "id": "./src/index.ts"
-        },
-        {
-          "identifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
-          "name": "./src/resolvers/index.ts",
-          "id": "./src/resolvers/index.ts"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": "./src/utils/index.ts",
-      "issuerId": "./src/resolvers/index.ts",
-      "chunks": [
-        "server"
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
-          "module": "./src/resolvers/index.ts",
-          "moduleName": "./src/resolvers/index.ts",
-          "resolvedModuleIdentifier": "/Users/mahmoudelawadi/Documents/Projects/todo-api/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/Users/mahmoudelawadi/Documents/Projects/todo-api/src/resolvers/index.ts",
-          "resolvedModule": "./src/resolvers/index.ts",
-          "type": "cjs require",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../utils",
-          "loc": "5:16-35",
-          "moduleId": "./src/resolvers/index.ts",
-          "resolvedModuleId": "./src/resolvers/index.ts"
-        }
-      ],
-      "usedExports": null,
-      "providedExports": [
-        "__esModule",
-        "checkIfUserLoggedIn",
-        "checkUserLogin",
-        "decodeAuthHeader"
-      ],
-      "optimizationBailout": [],
-      "depth": 2
-    },
-    {
-      "type": "module",
       "moduleType": "javascript/dynamic",
       "layer": null,
       "size": 42,
@@ -1709,11 +1727,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 67663
+          "size": 70274
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 67663,
+      "assetsSize": 70274,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1731,11 +1749,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 67663
+          "size": 70274
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 67663,
+      "assetsSize": 70274,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
