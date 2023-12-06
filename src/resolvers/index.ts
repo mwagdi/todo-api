@@ -3,6 +3,7 @@ import { sign } from 'jsonwebtoken';
 
 import { Resolvers } from '../generated/graphql';
 import { Context } from '../types';
+import { checkUserLogin } from '../utils';
 
 const resolvers: Resolvers = {
   // Query: {
@@ -162,6 +163,27 @@ const resolvers: Resolvers = {
           user,
         };
       } catch (error: unknown) {
+        throw new Error(
+          error instanceof Error ? error.message : 'Unknown error',
+        );
+      }
+    },
+    login: async (parent, { email, password }, { db }) => {
+      try {
+        const { password: userPassword, ...user } =
+          await db.getUserByEmail(email);
+
+        await checkUserLogin(userPassword, password);
+        const token = sign(
+          { userId: user.id },
+          process.env.APP_SECRET as string,
+        );
+
+        return {
+          token,
+          user,
+        };
+      } catch (error) {
         throw new Error(
           error instanceof Error ? error.message : 'Unknown error',
         );

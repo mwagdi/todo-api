@@ -19,6 +19,10 @@ class MyDatabase extends SQLDataSource {
       .insert(input);
   }
 
+  getUserByEmail(email: string) {
+    return this.knex.select('*').from('users').where('email', email).first();
+  }
+
   migrate() {
     return this.knex.migrate.latest();
   }

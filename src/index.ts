@@ -8,16 +8,6 @@ import { Context } from './types';
 
 const typeDefs = schema.loc?.source.body as string;
 
-// const client = new Client({
-//   host: 'localhost',
-//   port: 5432,
-//   database: 'todo_app',
-//   user: 'mahmoudelawadi',
-//   password: 'mahmoudelawadi',
-// });
-
-// client.connect().then(() => console.log('Connected to database'));
-
 const server = new ApolloServer<Context>({
   typeDefs,
   resolvers,
