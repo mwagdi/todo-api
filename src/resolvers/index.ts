@@ -139,46 +139,10 @@ const resolvers: Resolvers = {
   //     },
   // },
   Query: {
-    users: async (parent, args, { db }: Context) => {
-      const x = await db.getUsers();
-      console.log(x);
-      return [
-        {
-          id: 1,
-          first_name: 'Mahmoud',
-          last_name: 'Elawadi',
-          email: 'mahmoudwagdi86@gmail.com',
-          username: 'mwagdi',
-          tasks: [],
-        },
-      ];
-    },
-    tasks: () => [
-      {
-        id: 1,
-        title: 'Task',
-        description: 'Description',
-        owners: [
-          {
-            id: 1,
-            first_name: 'Mahmoud',
-            last_name: 'Elawadi',
-            email: 'mahmoudwagdi86@gmail.com',
-            username: 'mwagdi',
-            tasks: [],
-          },
-        ],
-        comments: [],
-        createdBy: {
-          id: 1,
-          first_name: 'Mahmoud',
-          last_name: 'Elawadi',
-          email: 'mahmoudwagdi86@gmail.com',
-          username: 'mwagdi',
-          tasks: [],
-        },
-      },
-    ],
+    users: async (parent, args, { db }: Context) => await db.getUsers(),
+  },
+  User: {
+    tasks: async (parent, args, { db }: Context) => await db.getTasks(parent.id),
   },
   Mutation: {
     signup: async (parent, { input }, { db }) => {

@@ -1,14 +1,12 @@
-// postgresql://mahmoudelawadi:mahmoudelawadi@localhost:5432/todo_app
-
 import MyDatabase from './MyDatabase';
 
 const knexConfig = {
   client: 'pg',
   connection: {
-    database: 'todo_app',
-    host: 'localhost',
-    user: 'mahmoudelawadi',
-    password: 'mahmoudelawadi',
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
   },
   migrations: {
     tableName: 'knex_migrations',

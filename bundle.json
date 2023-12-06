@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "hash": "c9835b8123059cf7ed9a",
+  "hash": "0cd8b4808027b7640e30",
   "version": "5.89.0",
-  "time": 654,
-  "builtAt": 1701804431048,
+  "time": 584,
+  "builtAt": 1701851791409,
   "publicPath": "",
   "outputPath": "/Users/mahmoudelawadi/Documents/Projects/todo-api/dist",
   "assetsByChunkName": {
@@ -15,13 +15,13 @@
     {
       "type": "asset",
       "name": "index.js",
-      "size": 65229,
+      "size": 62659,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
-        "size": 65229
+        "size": 62659
       },
       "chunkNames": [
         "server"
@@ -43,9 +43,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 20732,
+      "size": 19737,
       "sizes": {
-        "javascript": 20732
+        "javascript": 19737
       },
       "names": [
         "server"
@@ -58,7 +58,7 @@
         "index.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "f3b0cd54e5ca11db2b53",
+      "hash": "fcb9fc15d27143cb19da",
       "childrenByOrder": {},
       "id": "server",
       "siblings": [],
@@ -69,9 +69,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 585,
+          "size": 740,
           "sizes": {
-            "javascript": 585
+            "javascript": 740
           },
           "built": true,
           "codeGenerated": true,
@@ -122,7 +122,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./MyDatabase",
-              "loc": "7:37-60",
+              "loc": "6:37-60",
               "moduleId": "./src/db/dbConfig.ts",
               "resolvedModuleId": "./src/db/dbConfig.ts"
             }
@@ -139,9 +139,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 731,
+          "size": 688,
           "sizes": {
-            "javascript": 731
+            "javascript": 688
           },
           "built": true,
           "codeGenerated": true,
@@ -187,7 +187,7 @@
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "3:23-27",
+              "loc": "2:23-27",
               "moduleId": "./src/db/dbConfig.ts",
               "resolvedModuleId": "./src/db/dbConfig.ts"
             },
@@ -201,7 +201,7 @@
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "3:31-51",
+              "loc": "2:31-51",
               "moduleId": "./src/db/dbConfig.ts",
               "resolvedModuleId": "./src/db/dbConfig.ts"
             },
@@ -223,7 +223,7 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: this is used directly at 3:23-27"
+            "CommonJS bailout: this is used directly at 2:23-27"
           ],
           "depth": 1
         },
@@ -317,9 +317,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 6935,
+          "size": 5828,
           "sizes": {
-            "javascript": 6935
+            "javascript": 5828
           },
           "built": true,
           "codeGenerated": true,
@@ -1003,9 +1003,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 731,
+      "size": 688,
       "sizes": {
-        "javascript": 731
+        "javascript": 688
       },
       "built": true,
       "codeGenerated": true,
@@ -1050,7 +1050,7 @@
           "active": true,
           "explanation": "",
           "userRequest": null,
-          "loc": "3:23-27",
+          "loc": "2:23-27",
           "moduleId": "./src/db/dbConfig.ts",
           "resolvedModuleId": "./src/db/dbConfig.ts"
         },
@@ -1064,7 +1064,7 @@
           "active": true,
           "explanation": "",
           "userRequest": null,
-          "loc": "3:31-51",
+          "loc": "2:31-51",
           "moduleId": "./src/db/dbConfig.ts",
           "resolvedModuleId": "./src/db/dbConfig.ts"
         },
@@ -1086,7 +1086,7 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: this is used directly at 3:23-27"
+        "CommonJS bailout: this is used directly at 2:23-27"
       ],
       "depth": 1
     },
@@ -1094,9 +1094,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 6935,
+      "size": 5828,
       "sizes": {
-        "javascript": 6935
+        "javascript": 5828
       },
       "built": true,
       "codeGenerated": true,
@@ -1235,9 +1235,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 585,
+      "size": 740,
       "sizes": {
-        "javascript": 585
+        "javascript": 740
       },
       "built": true,
       "codeGenerated": true,
@@ -1287,7 +1287,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./MyDatabase",
-          "loc": "7:37-60",
+          "loc": "6:37-60",
           "moduleId": "./src/db/dbConfig.ts",
           "resolvedModuleId": "./src/db/dbConfig.ts"
         }
@@ -1510,11 +1510,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 65229
+          "size": 62659
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 65229,
+      "assetsSize": 62659,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1532,11 +1532,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 65229
+          "size": 62659
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 65229,
+      "assetsSize": 62659,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
