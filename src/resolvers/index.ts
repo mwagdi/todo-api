@@ -146,6 +146,14 @@ const resolvers: Resolvers = {
     tasks: async (parent, args, { db }: Context) =>
       await db.getTasks(parent.id),
   },
+  Task: {
+    owner: async (parent, args, { db, userId }: Context) => {
+      // console.log({ parent });
+      // const task = await db.getTaskById(parent.id);
+      // console.log({ task });
+      return await db.getOwner(userId as number);
+    },
+  },
   Mutation: {
     signup: async (parent, { input }, { db }) => {
       const { password: plaintextPassword, ...userFields } = input;
@@ -190,25 +198,22 @@ const resolvers: Resolvers = {
         );
       }
     },
-    // addTask: async (parent, { task }, { prisma, userId }) => {
-    //   try {
-    //     checkIfUserLoggedIn(userId);
-    //
-    //     return await prisma.task.create({
-    //       data: {
-    //         ...task,
-    //         owners: {
-    //           connect: [{ id: userId }],
-    //         },
-    //         createdBy: {
-    //           connect: { id: userId },
-    //         },
-    //       },
-    //     });
-    //   } catch (error) {
-    //     throw new Error(error.message);
-    //   }
-    // },
+    addTask: async (parent, { task }, { db, userId }) => {
+      try {
+        checkIfUserLoggedIn(userId);
+
+        const [{ user_id: _ignore, ...newTask }] = await db.createTask({
+          ...task,
+          user_id: userId,
+        });
+
+        return newTask;
+      } catch (error) {
+        throw new Error(
+          error instanceof Error ? error.message : 'Unknown error',
+        );
+      }
+    },
   },
 };
 

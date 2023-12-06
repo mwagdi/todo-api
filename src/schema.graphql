@@ -11,9 +11,9 @@ type Task {
     id: Int!
     title: String!
     description: String
-    owners: [User]!
+    # owners: [User]!
     comments: [Comment]
-    createdBy: User!
+    owner: User!
 }
 
 type Comment {
