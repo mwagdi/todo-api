@@ -1,5 +1,6 @@
 import { compare } from 'bcryptjs';
 import { verify } from 'jsonwebtoken';
+
 import { User } from '../generated/graphql';
 
 export interface AuthTokenPayload {
@@ -7,7 +8,7 @@ export interface AuthTokenPayload {
 }
 
 export const decodeAuthHeader = (authHeader: string) => {
-  const [_, token] = authHeader.split(' ');
+  const [_ignore, token] = authHeader.split(' ');
 
   if (!token) {
     throw new Error('No token found');

@@ -16,6 +16,7 @@
     "max-statements-per-line": ["error", { "max": 1 }],
     "no-multiple-empty-lines": "error",
     "no-console": "warn",
-    "max-len": ["error", { "code": 80 }]
+    "max-len": ["error", { "code": 80 }],
+    "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_" }]
   }
 }

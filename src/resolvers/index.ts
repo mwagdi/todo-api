@@ -1,7 +1,7 @@
 import { hash } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 
-import { Resolvers, User } from '../generated/graphql';
+import { Resolvers } from '../generated/graphql';
 import { Context } from '../types';
 import { checkUserLogin } from '../utils';
 
@@ -174,7 +174,7 @@ const resolvers: Resolvers = {
 
         await checkUserLogin(userWithPassword, password);
 
-        const { password: __, ...user } = userWithPassword;
+        const { password: _ignore, ...user } = userWithPassword;
         const token = sign(
           { userId: user.id },
           process.env.APP_SECRET as string,
