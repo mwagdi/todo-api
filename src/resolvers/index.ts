@@ -6,30 +6,6 @@ import { Context } from '../types';
 import { checkIfUserLoggedIn, checkUserLogin } from '../utils';
 
 const resolvers: Resolvers = {
-  // Task: {
-  //     comments: (parent, args, { prisma }) => {
-  //         return prisma.task.findUnique({ where: { id: parent.id } }).comments();
-  //     },
-  //     owners: (parent, args, { prisma }) => {
-  //         return prisma.task.findUnique({ where: { id: parent.id } }).owners();
-  //     },
-  //     createdBy: (parent, args, { prisma }) => {
-  //         return prisma.task.findUnique({ where: { id: parent.id } }).createdBy();
-  //     },
-  // },
-  // Mutation: {
-  //     deleteUser: async (parent, { id }, { prisma }) => {
-  //         try {
-  //             return await prisma.user.delete({
-  //                 where: {
-  //                     id,
-  //                 },
-  //             });
-  //         } catch (error) {
-  //             throw new Error(error.message);
-  //         }
-  //     },
-  // },
   Query: {
     users: async (parent, args, { db }: Context) => await db.getUsers(),
   },
@@ -38,8 +14,8 @@ const resolvers: Resolvers = {
       await db.getTasks(parent.id),
   },
   Task: {
-    owner: async (parent, args, { db, userId }: Context) =>
-      await db.getOwner(userId as number),
+    owner: async (parent, args, { db }: Context) =>
+      await db.getOwner(parent.user_id),
     comments: async (parent, args, { db }: Context) =>
       await db.getCommentsByTaskId(parent.id),
   },

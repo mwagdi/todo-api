@@ -115,6 +115,7 @@ export type Task = {
   id: Scalars['Int']['output'];
   owner: User;
   title: Scalars['String']['output'];
+  user_id: Scalars['Int']['output'];
 };
 
 export type TaskInput = {
@@ -383,6 +384,7 @@ export type TaskResolvers<
   id?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   owner?: Resolver<ResolversTypes['User'], ParentType, ContextType>;
   title?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  user_id?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 

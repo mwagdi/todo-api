@@ -13,6 +13,7 @@ type Task {
     description: String
     # owners: [User]!
     comments: [Comment]
+    user_id: Int!
     owner: User!
 }
 
