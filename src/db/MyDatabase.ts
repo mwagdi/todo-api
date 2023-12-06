@@ -43,6 +43,10 @@ class MyDatabase extends SQLDataSource {
     return this.knex('comments').returning('*').where('id', id).del();
   }
 
+  getCommentsByTaskId(taskId: number) {
+    return this.knex.select('*').from('comments').where('task_id', taskId);
+  }
+
   getUserByEmail(email: string) {
     return this.knex.select('*').from('users').where('email', email).first();
   }

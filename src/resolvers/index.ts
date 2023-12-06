@@ -40,6 +40,8 @@ const resolvers: Resolvers = {
   Task: {
     owner: async (parent, args, { db, userId }: Context) =>
       await db.getOwner(userId as number),
+    comments: async (parent, args, { db }: Context) =>
+      await db.getCommentsByTaskId(parent.id),
   },
   Comment: {
     by: async (parent, args, { db }: Context) =>
