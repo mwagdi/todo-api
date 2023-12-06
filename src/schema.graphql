@@ -40,6 +40,7 @@ type Mutation {
     login(email: String!, password: String!): AuthPayload
     deleteUser(id: Int): [User]
     addTask(task: TaskInput!): Task!
+    deleteTask(id: Int!): Task!
     addComment(comment: CommentInput!): Comment!
     deleteComment(id: Int!): Comment!
 }

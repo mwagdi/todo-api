@@ -147,12 +147,14 @@ const resolvers: Resolvers = {
       await db.getTasks(parent.id),
   },
   Task: {
-    owner: async (parent, args, { db, userId }: Context) => {
-      // console.log({ parent });
-      // const task = await db.getTaskById(parent.id);
-      // console.log({ task });
-      return await db.getOwner(userId as number);
-    },
+    owner: async (parent, args, { db, userId }: Context) =>
+      await db.getOwner(userId as number),
+  },
+  Comment: {
+    by: async (parent, args, { db }: Context) =>
+      await db.getOwner(parent.by.id),
+    task: async (parent, args, { db }: Context) =>
+      await db.getTaskById(parent.task.id),
   },
   Mutation: {
     signup: async (parent, { input }, { db }) => {
@@ -208,6 +210,18 @@ const resolvers: Resolvers = {
         });
 
         return newTask;
+      } catch (error) {
+        throw new Error(
+          error instanceof Error ? error.message : 'Unknown error',
+        );
+      }
+    },
+    deleteTask: async (parent, { id }, { db, userId }) => {
+      try {
+        checkIfUserLoggedIn(userId);
+
+        const [deleted] = await db.deleteTask(id);
+        return deleted;
       } catch (error) {
         throw new Error(
           error instanceof Error ? error.message : 'Unknown error',

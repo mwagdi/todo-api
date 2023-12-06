@@ -27,6 +27,10 @@ class MyDatabase extends SQLDataSource {
     return this.knex('tasks').returning('*').insert(task);
   }
 
+  deleteTask(id: number) {
+    return this.knex('tasks').returning('*').where('id', id).del();
+  }
+
   getUserByEmail(email: string) {
     return this.knex.select('*').from('users').where('email', email).first();
   }
