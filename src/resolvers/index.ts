@@ -142,7 +142,8 @@ const resolvers: Resolvers = {
     users: async (parent, args, { db }: Context) => await db.getUsers(),
   },
   User: {
-    tasks: async (parent, args, { db }: Context) => await db.getTasks(parent.id),
+    tasks: async (parent, args, { db }: Context) =>
+      await db.getTasks(parent.id),
   },
   Mutation: {
     signup: async (parent, { input }, { db }) => {
@@ -151,14 +152,19 @@ const resolvers: Resolvers = {
       try {
         const [user] = await db.createUser({ ...userFields, password });
 
-        const token = sign({ userId: user.id }, process.env.APP_SECRET as string);
+        const token = sign(
+          { userId: user.id },
+          process.env.APP_SECRET as string,
+        );
 
         return {
           token,
           user,
         };
       } catch (error: unknown) {
-        throw new Error(error instanceof Error ? error.message : 'Unknown error');
+        throw new Error(
+          error instanceof Error ? error.message : 'Unknown error',
+        );
       }
     },
   },

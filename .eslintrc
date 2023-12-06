@@ -15,6 +15,7 @@
     "simple-import-sort/exports": "error",
     "max-statements-per-line": ["error", { "max": 1 }],
     "no-multiple-empty-lines": "error",
-    "no-console": "warn"
+    "no-console": "warn",
+    "max-len": ["error", { "code": 80 }]
   }
 }

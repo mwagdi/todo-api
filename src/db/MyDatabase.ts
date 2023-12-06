@@ -4,7 +4,9 @@ import { SignupInput, User } from '../generated/graphql';
 
 class MyDatabase extends SQLDataSource {
   getUsers() {
-    return this.knex.select('id', 'email', 'first_name', 'last_name', 'username').from('users');
+    return this.knex
+      .select('id', 'email', 'first_name', 'last_name', 'username')
+      .from('users');
   }
 
   getTasks(userId: number) {
@@ -12,7 +14,9 @@ class MyDatabase extends SQLDataSource {
   }
 
   createUser(input: SignupInput): Promise<User[]> {
-    return this.knex('users').returning(['id', 'first_name', 'last_name', 'email', 'username']).insert(input);
+    return this.knex('users')
+      .returning(['id', 'first_name', 'last_name', 'email', 'username'])
+      .insert(input);
   }
 
   migrate() {
