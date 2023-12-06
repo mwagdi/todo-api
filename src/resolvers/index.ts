@@ -6,18 +6,6 @@ import { Context } from '../types';
 import { checkIfUserLoggedIn, checkUserLogin } from '../utils';
 
 const resolvers: Resolvers = {
-  // Query: {
-  //     users: (parent, args, { prisma }) => {
-  //         return prisma.user.findMany({
-  //             include: { tasks: true },
-  //         });
-  //     },
-  //     tasks: (parent, args, { prisma }) => {
-  //         return prisma.task.findMany({
-  //             include: { owners: true },
-  //         });
-  //     },
-  // },
   // Task: {
   //     comments: (parent, args, { prisma }) => {
   //         return prisma.task.findUnique({ where: { id: parent.id } }).comments();
@@ -29,96 +17,12 @@ const resolvers: Resolvers = {
   //         return prisma.task.findUnique({ where: { id: parent.id } }).createdBy();
   //     },
   // },
-  // Comment: {
-  //     task: (parent, args, { prisma }) => {
-  //         return prisma.comment.findUnique({ where: { id: parent.id } }).task();
-  //     },
-  //     by: (parent, args, { prisma }) => {
-  //         return prisma.comment.findUnique({ where: { id: parent.id } }).by();
-  //     },
-  // },
   // Mutation: {
-  //     signup: async (parent, { input }, { prisma }) => {
-  //         const { password: plaintextPassword, ...userFields } = input;
-  //         const password = await hash(plaintextPassword, 10);
-  //         try {
-  //             const user = await prisma.user.create({
-  //                 data: {
-  //                     ...userFields,
-  //                     password,
-  //                 },
-  //             });
-  //
-  //             const token = sign({ userId: user.id }, process.env.APP_SECRET);
-  //
-  //             return {
-  //                 token,
-  //                 user,
-  //             };
-  //         } catch (error) {
-  //             throw new Error(error.message);
-  //         }
-  //     },
-  //     login: async (parent, { email, password }, { prisma }) => {
-  //         try {
-  //             const user = await prisma.user.findUnique({
-  //                 where: { email },
-  //             });
-  //
-  //             await checkUserLogin(user, password);
-  //             const token = sign({ userId: user.id }, process.env.APP_SECRET);
-  //
-  //             return {
-  //                 token,
-  //                 user,
-  //             };
-  //         } catch (error) {
-  //             throw new Error(error.message);
-  //         }
-  //     },
   //     deleteUser: async (parent, { id }, { prisma }) => {
   //         try {
   //             return await prisma.user.delete({
   //                 where: {
   //                     id,
-  //                 },
-  //             });
-  //         } catch (error) {
-  //             throw new Error(error.message);
-  //         }
-  //     },
-  //     addTask: async (parent, { task }, { prisma, userId }) => {
-  //         try {
-  //             checkIfUserLoggedIn(userId);
-  //
-  //             return await prisma.task.create({
-  //                 data: {
-  //                     ...task,
-  //                     owners: {
-  //                         connect: [{ id: userId }],
-  //                     },
-  //                     createdBy: {
-  //                         connect: { id: userId },
-  //                     },
-  //                 },
-  //             });
-  //         } catch (error) {
-  //             throw new Error(error.message);
-  //         }
-  //     },
-  //     addComment: async (parent, { comment }, { prisma, userId }) => {
-  //         try {
-  //             checkIfUserLoggedIn(userId);
-  //
-  //             return await prisma.comment.create({
-  //                 data: {
-  //                     ...comment,
-  //                     by: {
-  //                         connect: { id: userId },
-  //                     },
-  //                     task: {
-  //                         connect: { id: comment.task },
-  //                     },
   //                 },
   //             });
   //         } catch (error) {
@@ -152,9 +56,9 @@ const resolvers: Resolvers = {
   },
   Comment: {
     by: async (parent, args, { db }: Context) =>
-      await db.getOwner(parent.by.id),
+      await db.getOwner(parent.user_id),
     task: async (parent, args, { db }: Context) =>
-      await db.getTaskById(parent.task.id),
+      await db.getTaskById(parent.task_id),
   },
   Mutation: {
     signup: async (parent, { input }, { db }) => {
@@ -222,6 +126,23 @@ const resolvers: Resolvers = {
 
         const [deleted] = await db.deleteTask(id);
         return deleted;
+      } catch (error) {
+        throw new Error(
+          error instanceof Error ? error.message : 'Unknown error',
+        );
+      }
+    },
+    addComment: async (parent, { comment }, { db, userId }) => {
+      try {
+        checkIfUserLoggedIn(userId);
+
+        const [newComment] = await db.createComment({
+          content: comment.content,
+          task_id: comment.task,
+          user_id: userId,
+        });
+
+        return newComment;
       } catch (error) {
         throw new Error(
           error instanceof Error ? error.message : 'Unknown error',

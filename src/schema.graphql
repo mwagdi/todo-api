@@ -21,7 +21,9 @@ type Comment {
     content: String!
     createdAt: String!
     by: User!
+    user_id: Int!
     task: Task!
+    task_id: Int!
 }
 
 type AuthPayload {
