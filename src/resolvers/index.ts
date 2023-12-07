@@ -73,7 +73,7 @@ const resolvers: Resolvers = {
       try {
         checkIfUserLoggedIn(userId);
 
-        const [{ user_id: _ignore, ...newTask }] = await db.createTask({
+        const [newTask] = await db.createTask({
           ...task,
           user_id: userId,
         });
