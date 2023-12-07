@@ -1,6 +1,7 @@
 import { SQLDataSource } from 'datasource-sql';
 
 import {
+  CommentEditInput,
   SignupInput,
   TaskEditInput,
   TaskInput,
@@ -48,7 +49,7 @@ class MyDatabase extends SQLDataSource {
     return this.knex('comments').returning('*').insert(comment);
   }
 
-  editComment(id: number, comment: { content: string }) {
+  editComment(id: number, comment: CommentEditInput) {
     return this.knex('comments').returning('*').where('id', id).update(comment);
   }
 

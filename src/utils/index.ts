@@ -17,7 +17,7 @@ export const decodeAuthHeader = (authHeader: string) => {
   return verify(token, process.env.APP_SECRET as string) as AuthTokenPayload;
 };
 
-export const checkIfUserLoggedIn = (userId: number) => {
+export const checkIfUserLoggedIn = (userId?: number) => {
   if (!userId) throw new Error('Cannot create task without logging in.');
 };
 
