@@ -85,6 +85,22 @@ const resolvers: Resolvers = {
         );
       }
     },
+    editTask: async (parent, { id, task }, { db, userId }) => {
+      try {
+        checkIfUserLoggedIn(userId);
+
+        const [{ user_id: _ignore, ...editedTask }] = await db.editTask(
+          id,
+          task,
+        );
+
+        return editedTask;
+      } catch (error) {
+        throw new Error(
+          error instanceof Error ? error.message : 'Unknown error',
+        );
+      }
+    },
     deleteTask: async (parent, { id }, { db, userId }) => {
       try {
         checkIfUserLoggedIn(userId);

@@ -45,6 +45,7 @@ export type Mutation = {
   deleteComment: Comment;
   deleteTask: Task;
   deleteUser?: Maybe<Array<Maybe<User>>>;
+  editTask: Task;
   login?: Maybe<AuthPayload>;
   signup?: Maybe<AuthPayload>;
 };
@@ -72,6 +73,12 @@ export type MutationDeleteTaskArgs = {
 
 export type MutationDeleteUserArgs = {
   id?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type MutationEditTaskArgs = {
+  id: Scalars['Int']['input'];
+  task: TaskEditInput;
 };
 
 
@@ -115,6 +122,12 @@ export type Task = {
   status: Status;
   title: Scalars['String']['output'];
   user_id: Scalars['Int']['output'];
+};
+
+export type TaskEditInput = {
+  description?: InputMaybe<Scalars['String']['input']>;
+  status?: InputMaybe<Status>;
+  title?: InputMaybe<Scalars['String']['input']>;
 };
 
 export type TaskInput = {
@@ -214,6 +227,7 @@ export type ResolversTypes = {
   Status: Status;
   String: ResolverTypeWrapper<Scalars['String']['output']>;
   Task: ResolverTypeWrapper<Task>;
+  TaskEditInput: TaskEditInput;
   TaskInput: TaskInput;
   User: ResolverTypeWrapper<User>;
 };
@@ -230,6 +244,7 @@ export type ResolversParentTypes = {
   SignupInput: SignupInput;
   String: Scalars['String']['output'];
   Task: Task;
+  TaskEditInput: TaskEditInput;
   TaskInput: TaskInput;
   User: User;
 };
@@ -257,6 +272,7 @@ export type MutationResolvers<ContextType = any, ParentType extends ResolversPar
   deleteComment?: Resolver<ResolversTypes['Comment'], ParentType, ContextType, RequireFields<MutationDeleteCommentArgs, 'id'>>;
   deleteTask?: Resolver<ResolversTypes['Task'], ParentType, ContextType, RequireFields<MutationDeleteTaskArgs, 'id'>>;
   deleteUser?: Resolver<Maybe<Array<Maybe<ResolversTypes['User']>>>, ParentType, ContextType, Partial<MutationDeleteUserArgs>>;
+  editTask?: Resolver<ResolversTypes['Task'], ParentType, ContextType, RequireFields<MutationEditTaskArgs, 'id' | 'task'>>;
   login?: Resolver<Maybe<ResolversTypes['AuthPayload']>, ParentType, ContextType, RequireFields<MutationLoginArgs, 'email' | 'password'>>;
   signup?: Resolver<Maybe<ResolversTypes['AuthPayload']>, ParentType, ContextType, RequireFields<MutationSignupArgs, 'input'>>;
 };

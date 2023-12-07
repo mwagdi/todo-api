@@ -1,6 +1,11 @@
 import { SQLDataSource } from 'datasource-sql';
 
-import { SignupInput, TaskInput, User } from '../generated/graphql';
+import {
+  SignupInput,
+  TaskEditInput,
+  TaskInput,
+  User,
+} from '../generated/graphql';
 
 class MyDatabase extends SQLDataSource {
   getUsers() {
@@ -25,6 +30,10 @@ class MyDatabase extends SQLDataSource {
 
   createTask(task: TaskInput & { user_id: number }) {
     return this.knex('tasks').returning('*').insert(task);
+  }
+
+  editTask(id: number, task: TaskEditInput) {
+    return this.knex('tasks').returning('*').where('id', id).update(task);
   }
 
   deleteTask(id: number) {

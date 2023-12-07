@@ -30,6 +30,5 @@ const server = new ApolloServer<Context>({
     },
   });
 
-  console.log({ env: process.env.DB_USER });
   console.log(`🚀  Server ready at: ${url}`);
 })();
