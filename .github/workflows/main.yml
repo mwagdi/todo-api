@@ -52,6 +52,7 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "mwagdi-todo-api"
           heroku_email: "mahmoudwagdi86@gmail.com"
+          usedocker: true
 
   push_to_Docker_Hub:
     # The type of runner that the job will run on
