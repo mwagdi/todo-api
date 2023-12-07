@@ -130,6 +130,22 @@ const resolvers: Resolvers = {
         );
       }
     },
+    editComment: async (parent, { id, comment }, { db, userId }) => {
+      try {
+        checkIfUserLoggedIn(userId);
+
+        const [{ user_id: _ignore, ...editedComment }] = await db.editComment(
+          id,
+          comment,
+        );
+
+        return editedComment;
+      } catch (error) {
+        throw new Error(
+          error instanceof Error ? error.message : 'Unknown error',
+        );
+      }
+    },
     deleteComment: async (parent, { id }, { db, userId }) => {
       try {
         checkIfUserLoggedIn(userId);

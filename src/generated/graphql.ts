@@ -33,6 +33,10 @@ export type Comment = {
   user_id: Scalars['Int']['output'];
 };
 
+export type CommentEditInput = {
+  content?: InputMaybe<Scalars['String']['input']>;
+};
+
 export type CommentInput = {
   content: Scalars['String']['input'];
   task: Scalars['Int']['input'];
@@ -45,6 +49,7 @@ export type Mutation = {
   deleteComment: Comment;
   deleteTask: Task;
   deleteUser?: Maybe<Array<Maybe<User>>>;
+  editComment: Comment;
   editTask: Task;
   login?: Maybe<AuthPayload>;
   signup?: Maybe<AuthPayload>;
@@ -73,6 +78,12 @@ export type MutationDeleteTaskArgs = {
 
 export type MutationDeleteUserArgs = {
   id?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type MutationEditCommentArgs = {
+  comment: CommentEditInput;
+  id: Scalars['Int']['input'];
 };
 
 
@@ -219,6 +230,7 @@ export type ResolversTypes = {
   AuthPayload: ResolverTypeWrapper<AuthPayload>;
   Boolean: ResolverTypeWrapper<Scalars['Boolean']['output']>;
   Comment: ResolverTypeWrapper<Comment>;
+  CommentEditInput: CommentEditInput;
   CommentInput: CommentInput;
   Int: ResolverTypeWrapper<Scalars['Int']['output']>;
   Mutation: ResolverTypeWrapper<{}>;
@@ -237,6 +249,7 @@ export type ResolversParentTypes = {
   AuthPayload: AuthPayload;
   Boolean: Scalars['Boolean']['output'];
   Comment: Comment;
+  CommentEditInput: CommentEditInput;
   CommentInput: CommentInput;
   Int: Scalars['Int']['output'];
   Mutation: {};
@@ -272,6 +285,7 @@ export type MutationResolvers<ContextType = any, ParentType extends ResolversPar
   deleteComment?: Resolver<ResolversTypes['Comment'], ParentType, ContextType, RequireFields<MutationDeleteCommentArgs, 'id'>>;
   deleteTask?: Resolver<ResolversTypes['Task'], ParentType, ContextType, RequireFields<MutationDeleteTaskArgs, 'id'>>;
   deleteUser?: Resolver<Maybe<Array<Maybe<ResolversTypes['User']>>>, ParentType, ContextType, Partial<MutationDeleteUserArgs>>;
+  editComment?: Resolver<ResolversTypes['Comment'], ParentType, ContextType, RequireFields<MutationEditCommentArgs, 'comment' | 'id'>>;
   editTask?: Resolver<ResolversTypes['Task'], ParentType, ContextType, RequireFields<MutationEditTaskArgs, 'id' | 'task'>>;
   login?: Resolver<Maybe<ResolversTypes['AuthPayload']>, ParentType, ContextType, RequireFields<MutationLoginArgs, 'email' | 'password'>>;
   signup?: Resolver<Maybe<ResolversTypes['AuthPayload']>, ParentType, ContextType, RequireFields<MutationSignupArgs, 'input'>>;

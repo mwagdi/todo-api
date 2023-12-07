@@ -53,6 +53,7 @@ type Mutation {
     editTask(id: Int!, task: TaskEditInput!): Task!
     deleteTask(id: Int!): Task!
     addComment(comment: CommentInput!): Comment!
+    editComment(id: Int!, comment: CommentEditInput!): Comment!
     deleteComment(id: Int!): Comment!
 }
 
@@ -78,4 +79,8 @@ input TaskEditInput {
 input CommentInput {
     content: String!
     task: Int!
+}
+
+input CommentEditInput {
+    content: String
 }

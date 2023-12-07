@@ -48,6 +48,10 @@ class MyDatabase extends SQLDataSource {
     return this.knex('comments').returning('*').insert(comment);
   }
 
+  editComment(id: number, comment: { content: string }) {
+    return this.knex('comments').returning('*').where('id', id).update(comment);
+  }
+
   deleteComment(id: number) {
     return this.knex('comments').returning('*').where('id', id).del();
   }
