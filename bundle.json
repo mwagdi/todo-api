@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "hash": "7158f0ccee0a8f32cb99",
+  "hash": "9edd3ce245e00e1ce9d3",
   "version": "5.89.0",
-  "time": 1030,
-  "builtAt": 1701897582177,
+  "time": 999,
+  "builtAt": 1701939474131,
   "publicPath": "",
   "outputPath": "/usr/app/dist",
   "assetsByChunkName": {
@@ -15,13 +15,13 @@
     {
       "type": "asset",
       "name": "index.js",
-      "size": 65739,
+      "size": 67997,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
-        "size": 65739
+        "size": 67997
       },
       "chunkNames": [
         "server"
@@ -43,9 +43,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 20819,
+      "size": 21493,
       "sizes": {
-        "javascript": 20819
+        "javascript": 21493
       },
       "names": [
         "server"
@@ -58,7 +58,7 @@
         "index.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "ced16642c7d48c5408fe",
+      "hash": "d2b8e931fe177f4d4553",
       "childrenByOrder": {},
       "id": "server",
       "siblings": [],
@@ -80,10 +80,10 @@
           "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/MyDatabase.ts",
           "name": "./src/db/MyDatabase.ts",
           "nameForCondition": "/usr/app/src/db/MyDatabase.ts",
-          "index": 4,
-          "preOrderIndex": 4,
-          "index2": 3,
-          "postOrderIndex": 3,
+          "index": 5,
+          "preOrderIndex": 5,
+          "index2": 4,
+          "postOrderIndex": 4,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -122,7 +122,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./MyDatabase",
-              "loc": "6:37-60",
+              "loc": "7:37-60",
               "moduleId": "./src/db/dbConfig.ts",
               "resolvedModuleId": "./src/db/dbConfig.ts"
             }
@@ -139,9 +139,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 688,
+          "size": 677,
           "sizes": {
-            "javascript": 688
+            "javascript": 677
           },
           "built": true,
           "codeGenerated": true,
@@ -152,8 +152,8 @@
           "nameForCondition": "/usr/app/src/db/dbConfig.ts",
           "index": 3,
           "preOrderIndex": 3,
-          "index2": 4,
-          "postOrderIndex": 4,
+          "index2": 5,
+          "postOrderIndex": 5,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -244,8 +244,8 @@
           "nameForCondition": "/usr/app/src/index.ts",
           "index": 0,
           "preOrderIndex": 0,
-          "index2": 10,
-          "postOrderIndex": 10,
+          "index2": 11,
+          "postOrderIndex": 11,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -328,10 +328,10 @@
           "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
           "name": "./src/resolvers/index.ts",
           "nameForCondition": "/usr/app/src/resolvers/index.ts",
-          "index": 6,
-          "preOrderIndex": 6,
-          "index2": 8,
-          "postOrderIndex": 8,
+          "index": 7,
+          "preOrderIndex": 7,
+          "index2": 9,
+          "postOrderIndex": 9,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -382,9 +382,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 11884,
+          "size": 12527,
           "sizes": {
-            "javascript": 11884
+            "javascript": 12527
           },
           "built": true,
           "codeGenerated": true,
@@ -393,10 +393,10 @@
           "identifier": "/usr/app/node_modules/graphql-tag/loader.js!/usr/app/src/schema.graphql",
           "name": "./src/schema.graphql",
           "nameForCondition": "/usr/app/src/schema.graphql",
-          "index": 10,
-          "preOrderIndex": 10,
-          "index2": 9,
-          "postOrderIndex": 9,
+          "index": 11,
+          "preOrderIndex": 11,
+          "index2": 10,
+          "postOrderIndex": 10,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -471,10 +471,10 @@
           "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
           "name": "./src/utils/index.ts",
           "nameForCondition": "/usr/app/src/utils/index.ts",
-          "index": 9,
-          "preOrderIndex": 9,
-          "index2": 7,
-          "postOrderIndex": 7,
+          "index": 10,
+          "preOrderIndex": 10,
+          "index2": 8,
+          "postOrderIndex": 8,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -674,15 +674,15 @@
           "identifier": "external commonjs \"bcryptjs\"",
           "name": "external \"bcryptjs\"",
           "nameForCondition": null,
-          "index": 7,
-          "preOrderIndex": 7,
-          "index2": 5,
-          "postOrderIndex": 5,
+          "index": 8,
+          "preOrderIndex": 8,
+          "index2": 6,
+          "postOrderIndex": 6,
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
-          "issuerName": "./src/resolvers/index.ts",
+          "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
+          "issuerName": "./src/utils/index.ts",
           "issuerPath": [
             {
               "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/index.ts",
@@ -690,16 +690,16 @@
               "id": "./src/index.ts"
             },
             {
-              "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
-              "name": "./src/resolvers/index.ts",
-              "id": "./src/resolvers/index.ts"
+              "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
+              "name": "./src/utils/index.ts",
+              "id": "./src/utils/index.ts"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "bcryptjs",
-          "issuerId": "./src/resolvers/index.ts",
+          "issuerId": "./src/utils/index.ts",
           "chunks": [
             "server"
           ],
@@ -754,10 +754,10 @@
           "identifier": "external commonjs \"datasource-sql\"",
           "name": "external \"datasource-sql\"",
           "nameForCondition": null,
-          "index": 5,
-          "preOrderIndex": 5,
-          "index2": 2,
-          "postOrderIndex": 2,
+          "index": 6,
+          "preOrderIndex": 6,
+          "index2": 3,
+          "postOrderIndex": 3,
           "optional": false,
           "orphan": false,
           "dependent": true,
@@ -822,18 +822,18 @@
           "codeGenerated": true,
           "buildTimeExecuted": false,
           "cached": false,
-          "identifier": "external commonjs \"jsonwebtoken\"",
-          "name": "external \"jsonwebtoken\"",
+          "identifier": "external commonjs \"dotenv\"",
+          "name": "external \"dotenv\"",
           "nameForCondition": null,
-          "index": 8,
-          "preOrderIndex": 8,
-          "index2": 6,
-          "postOrderIndex": 6,
+          "index": 4,
+          "preOrderIndex": 4,
+          "index2": 2,
+          "postOrderIndex": 2,
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
-          "issuerName": "./src/resolvers/index.ts",
+          "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/dbConfig.ts",
+          "issuerName": "./src/db/dbConfig.ts",
           "issuerPath": [
             {
               "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/index.ts",
@@ -841,16 +841,82 @@
               "id": "./src/index.ts"
             },
             {
-              "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
-              "name": "./src/resolvers/index.ts",
-              "id": "./src/resolvers/index.ts"
+              "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/dbConfig.ts",
+              "name": "./src/db/dbConfig.ts",
+              "id": "./src/db/dbConfig.ts"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "dotenv",
+          "issuerId": "./src/db/dbConfig.ts",
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/dbConfig.ts",
+              "module": "./src/db/dbConfig.ts",
+              "moduleName": "./src/db/dbConfig.ts",
+              "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/dbConfig.ts",
+              "resolvedModule": "./src/db/dbConfig.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "dotenv",
+              "loc": "6:17-34",
+              "moduleId": "./src/db/dbConfig.ts",
+              "resolvedModuleId": "./src/db/dbConfig.ts"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external commonjs \"jsonwebtoken\"",
+          "name": "external \"jsonwebtoken\"",
+          "nameForCondition": null,
+          "index": 9,
+          "preOrderIndex": 9,
+          "index2": 7,
+          "postOrderIndex": 7,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
+          "issuerName": "./src/utils/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/index.ts",
+              "name": "./src/index.ts",
+              "id": "./src/index.ts"
+            },
+            {
+              "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
+              "name": "./src/utils/index.ts",
+              "id": "./src/utils/index.ts"
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": "jsonwebtoken",
-          "issuerId": "./src/resolvers/index.ts",
+          "issuerId": "./src/utils/index.ts",
           "chunks": [
             "server"
           ],
@@ -920,8 +986,8 @@
       "nameForCondition": "/usr/app/src/index.ts",
       "index": 0,
       "preOrderIndex": 0,
-      "index2": 10,
-      "postOrderIndex": 10,
+      "index2": 11,
+      "postOrderIndex": 11,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1112,9 +1178,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 688,
+      "size": 677,
       "sizes": {
-        "javascript": 688
+        "javascript": 677
       },
       "built": true,
       "codeGenerated": true,
@@ -1125,8 +1191,8 @@
       "nameForCondition": "/usr/app/src/db/dbConfig.ts",
       "index": 3,
       "preOrderIndex": 3,
-      "index2": 4,
-      "postOrderIndex": 4,
+      "index2": 5,
+      "postOrderIndex": 5,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1214,10 +1280,10 @@
       "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
       "name": "./src/resolvers/index.ts",
       "nameForCondition": "/usr/app/src/resolvers/index.ts",
-      "index": 6,
-      "preOrderIndex": 6,
-      "index2": 8,
-      "postOrderIndex": 8,
+      "index": 7,
+      "preOrderIndex": 7,
+      "index2": 9,
+      "postOrderIndex": 9,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1278,10 +1344,10 @@
       "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
       "name": "./src/utils/index.ts",
       "nameForCondition": "/usr/app/src/utils/index.ts",
-      "index": 9,
-      "preOrderIndex": 9,
-      "index2": 7,
-      "postOrderIndex": 7,
+      "index": 10,
+      "preOrderIndex": 10,
+      "index2": 8,
+      "postOrderIndex": 8,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1347,9 +1413,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 11884,
+      "size": 12527,
       "sizes": {
-        "javascript": 11884
+        "javascript": 12527
       },
       "built": true,
       "codeGenerated": true,
@@ -1358,10 +1424,10 @@
       "identifier": "/usr/app/node_modules/graphql-tag/loader.js!/usr/app/src/schema.graphql",
       "name": "./src/schema.graphql",
       "nameForCondition": "/usr/app/src/schema.graphql",
-      "index": 10,
-      "preOrderIndex": 10,
-      "index2": 9,
-      "postOrderIndex": 9,
+      "index": 11,
+      "preOrderIndex": 11,
+      "index2": 10,
+      "postOrderIndex": 10,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1422,6 +1488,71 @@
     },
     {
       "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external commonjs \"dotenv\"",
+      "name": "external \"dotenv\"",
+      "nameForCondition": null,
+      "index": 4,
+      "preOrderIndex": 4,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/dbConfig.ts",
+      "issuerName": "./src/db/dbConfig.ts",
+      "issuerPath": [
+        {
+          "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        },
+        {
+          "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/dbConfig.ts",
+          "name": "./src/db/dbConfig.ts",
+          "id": "./src/db/dbConfig.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "dotenv",
+      "issuerId": "./src/db/dbConfig.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/dbConfig.ts",
+          "module": "./src/db/dbConfig.ts",
+          "moduleName": "./src/db/dbConfig.ts",
+          "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/dbConfig.ts",
+          "resolvedModule": "./src/db/dbConfig.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "dotenv",
+          "loc": "6:17-34",
+          "moduleId": "./src/db/dbConfig.ts",
+          "resolvedModuleId": "./src/db/dbConfig.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
       "size": 1633,
@@ -1435,10 +1566,10 @@
       "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/MyDatabase.ts",
       "name": "./src/db/MyDatabase.ts",
       "nameForCondition": "/usr/app/src/db/MyDatabase.ts",
-      "index": 4,
-      "preOrderIndex": 4,
-      "index2": 3,
-      "postOrderIndex": 3,
+      "index": 5,
+      "preOrderIndex": 5,
+      "index2": 4,
+      "postOrderIndex": 4,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1476,7 +1607,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./MyDatabase",
-          "loc": "6:37-60",
+          "loc": "7:37-60",
           "moduleId": "./src/db/dbConfig.ts",
           "resolvedModuleId": "./src/db/dbConfig.ts"
         }
@@ -1504,14 +1635,14 @@
       "identifier": "external commonjs \"bcryptjs\"",
       "name": "external \"bcryptjs\"",
       "nameForCondition": null,
-      "index": 7,
-      "preOrderIndex": 7,
-      "index2": 5,
-      "postOrderIndex": 5,
+      "index": 8,
+      "preOrderIndex": 8,
+      "index2": 6,
+      "postOrderIndex": 6,
       "optional": false,
       "orphan": false,
-      "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
-      "issuerName": "./src/resolvers/index.ts",
+      "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
+      "issuerName": "./src/utils/index.ts",
       "issuerPath": [
         {
           "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/index.ts",
@@ -1519,16 +1650,16 @@
           "id": "./src/index.ts"
         },
         {
-          "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
-          "name": "./src/resolvers/index.ts",
-          "id": "./src/resolvers/index.ts"
+          "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
+          "name": "./src/utils/index.ts",
+          "id": "./src/utils/index.ts"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "bcryptjs",
-      "issuerId": "./src/resolvers/index.ts",
+      "issuerId": "./src/utils/index.ts",
       "chunks": [
         "server"
       ],
@@ -1583,14 +1714,14 @@
       "identifier": "external commonjs \"jsonwebtoken\"",
       "name": "external \"jsonwebtoken\"",
       "nameForCondition": null,
-      "index": 8,
-      "preOrderIndex": 8,
-      "index2": 6,
-      "postOrderIndex": 6,
+      "index": 9,
+      "preOrderIndex": 9,
+      "index2": 7,
+      "postOrderIndex": 7,
       "optional": false,
       "orphan": false,
-      "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
-      "issuerName": "./src/resolvers/index.ts",
+      "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
+      "issuerName": "./src/utils/index.ts",
       "issuerPath": [
         {
           "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/index.ts",
@@ -1598,16 +1729,16 @@
           "id": "./src/index.ts"
         },
         {
-          "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
-          "name": "./src/resolvers/index.ts",
-          "id": "./src/resolvers/index.ts"
+          "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/utils/index.ts",
+          "name": "./src/utils/index.ts",
+          "id": "./src/utils/index.ts"
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": "jsonwebtoken",
-      "issuerId": "./src/resolvers/index.ts",
+      "issuerId": "./src/utils/index.ts",
       "chunks": [
         "server"
       ],
@@ -1662,10 +1793,10 @@
       "identifier": "external commonjs \"datasource-sql\"",
       "name": "external \"datasource-sql\"",
       "nameForCondition": null,
-      "index": 5,
-      "preOrderIndex": 5,
-      "index2": 2,
-      "postOrderIndex": 2,
+      "index": 6,
+      "preOrderIndex": 6,
+      "index2": 3,
+      "postOrderIndex": 3,
       "optional": false,
       "orphan": false,
       "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/db/MyDatabase.ts",
@@ -1727,11 +1858,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 65739
+          "size": 67997
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 65739,
+      "assetsSize": 67997,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1749,11 +1880,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 65739
+          "size": 67997
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 65739,
+      "assetsSize": 67997,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
