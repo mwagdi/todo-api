@@ -6,7 +6,7 @@ config();
 
 const knexConfig = {
   client: 'pg',
-  connection: {
+  connection: process.env.DATABASE_URL || {
     database: process.env.DB_NAME,
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
