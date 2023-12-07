@@ -2,6 +2,8 @@ import { hash } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 
 import {
+  Comment,
+  Maybe,
   MutationAddCommentArgs,
   MutationAddTaskArgs,
   MutationDeleteCommentArgs,
@@ -10,15 +12,20 @@ import {
   MutationEditTaskArgs,
   MutationLoginArgs,
   MutationSignupArgs,
+  RequireFields,
+  Resolver,
+  ResolversTypes,
+  Task,
 } from '../../generated/graphql';
 import { Context } from '../../types';
 import { checkIfUserLoggedIn, checkUserLogin } from '../../utils';
 
-export const signup = async (
-  parent: NonNullable<unknown>,
-  { input }: MutationSignupArgs,
-  { db }: Context,
-) => {
+export const signup: Resolver<
+  Maybe<ResolversTypes['AuthPayload']>,
+  NonNullable<unknown>,
+  Context,
+  RequireFields<MutationSignupArgs, 'input'>
+> = async (parent, { input }, { db }) => {
   const { password: plaintextPassword, ...userFields } = input;
   const password = await hash(plaintextPassword, 10);
   try {
@@ -34,11 +41,12 @@ export const signup = async (
     throw new Error(error instanceof Error ? error.message : 'Unknown error');
   }
 };
-export const login = async (
-  parent: NonNullable<unknown>,
-  { email, password }: MutationLoginArgs,
-  { db }: Context,
-) => {
+export const login: Resolver<
+  Maybe<ResolversTypes['AuthPayload']>,
+  NonNullable<unknown>,
+  Context,
+  RequireFields<MutationLoginArgs, 'email' | 'password'>
+> = async (parent, { email, password }, { db }) => {
   try {
     const userWithPassword = await db.getUserByEmail(email);
 
@@ -55,11 +63,12 @@ export const login = async (
     throw new Error(error instanceof Error ? error.message : 'Unknown error');
   }
 };
-export const addTask = async (
-  parent: NonNullable<unknown>,
-  { task }: MutationAddTaskArgs,
-  { db, userId }: Context,
-) => {
+export const addTask: Resolver<
+  ResolversTypes['Task'],
+  NonNullable<unknown>,
+  Context,
+  RequireFields<MutationAddTaskArgs, 'task'>
+> = async (parent, { task }: MutationAddTaskArgs, { db, userId }: Context) => {
   try {
     checkIfUserLoggedIn(userId);
 
@@ -68,16 +77,17 @@ export const addTask = async (
       user_id: userId as number,
     });
 
-    return newTask;
+    return newTask as unknown as Task;
   } catch (error) {
     throw new Error(error instanceof Error ? error.message : 'Unknown error');
   }
 };
-export const editTask = async (
-  parent: NonNullable<unknown>,
-  { id, task }: MutationEditTaskArgs,
-  { db, userId }: Context,
-) => {
+export const editTask: Resolver<
+  ResolversTypes['Task'],
+  NonNullable<unknown>,
+  Context,
+  RequireFields<MutationEditTaskArgs, 'id' | 'task'>
+> = async (parent, { id, task }, { db, userId }) => {
   try {
     checkIfUserLoggedIn(userId);
 
@@ -90,11 +100,12 @@ export const editTask = async (
     throw new Error(error instanceof Error ? error.message : 'Unknown error');
   }
 };
-export const deleteTask = async (
-  parent: NonNullable<unknown>,
-  { id }: MutationDeleteTaskArgs,
-  { db, userId }: Context,
-) => {
+export const deleteTask: Resolver<
+  ResolversTypes['Task'],
+  NonNullable<unknown>,
+  Context,
+  RequireFields<MutationDeleteTaskArgs, 'id'>
+> = async (parent, { id }, { db, userId }) => {
   try {
     checkIfUserLoggedIn(userId);
 
@@ -106,8 +117,13 @@ export const deleteTask = async (
     throw new Error(error instanceof Error ? error.message : 'Unknown error');
   }
 };
-export const addComment = async (
-  parent: NonNullable<unknown>,
+export const addComment: Resolver<
+  ResolversTypes['Comment'],
+  NonNullable<unknown>,
+  Context,
+  RequireFields<MutationAddCommentArgs, 'comment'>
+> = async (
+  parent,
   { comment }: MutationAddCommentArgs,
   { db, userId }: Context,
 ) => {
@@ -120,16 +136,17 @@ export const addComment = async (
       user_id: userId as number,
     });
 
-    return newComment;
+    return newComment as unknown as Comment;
   } catch (error) {
     throw new Error(error instanceof Error ? error.message : 'Unknown error');
   }
 };
-export const editComment = async (
-  parent: NonNullable<unknown>,
-  { id, comment }: MutationEditCommentArgs,
-  { db, userId }: Context,
-) => {
+export const editComment: Resolver<
+  ResolversTypes['Comment'],
+  NonNullable<unknown>,
+  Context,
+  RequireFields<MutationEditCommentArgs, 'comment' | 'id'>
+> = async (parent, { id, comment }, { db, userId }) => {
   try {
     checkIfUserLoggedIn(userId);
 
@@ -145,11 +162,12 @@ export const editComment = async (
     throw new Error(error instanceof Error ? error.message : 'Unknown error');
   }
 };
-export const deleteComment = async (
-  parent: NonNullable<unknown>,
-  { id }: MutationDeleteCommentArgs,
-  { db, userId }: Context,
-) => {
+export const deleteComment: Resolver<
+  ResolversTypes['Comment'],
+  NonNullable<unknown>,
+  Context,
+  RequireFields<MutationDeleteCommentArgs, 'id'>
+> = async (parent, { id }, { db, userId }) => {
   try {
     checkIfUserLoggedIn(userId);
 

@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "hash": "9b6509a87ba2b1aaaff3",
+  "hash": "caf8efb24d62173d87aa",
   "version": "5.89.0",
-  "time": 1143,
-  "builtAt": 1701970141905,
+  "time": 1071,
+  "builtAt": 1701971428326,
   "publicPath": "",
   "outputPath": "/usr/app/dist",
   "assetsByChunkName": {
@@ -15,13 +15,13 @@
     {
       "type": "asset",
       "name": "index.js",
-      "size": 96494,
+      "size": 84905,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
-        "size": 96494
+        "size": 84905
       },
       "chunkNames": [
         "server"
@@ -43,9 +43,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 31043,
+      "size": 26766,
       "sizes": {
-        "javascript": 31043
+        "javascript": 26766
       },
       "names": [
         "server"
@@ -58,7 +58,7 @@
         "index.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "a8ad1d3a0d93cceb9167",
+      "hash": "5b4b923c30c775b32182",
       "childrenByOrder": {},
       "id": "server",
       "siblings": [],
@@ -370,7 +370,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./comment",
-              "loc": "28:29-49",
+              "loc": "26:29-49",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             }
@@ -388,9 +388,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 5763,
+          "size": 1460,
           "sizes": {
-            "javascript": 5763
+            "javascript": 1460
           },
           "built": true,
           "codeGenerated": true,
@@ -450,7 +450,7 @@
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "4:23-27",
+              "loc": "2:23-27",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             },
@@ -464,7 +464,7 @@
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "4:31-51",
+              "loc": "2:31-51",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             },
@@ -478,7 +478,7 @@
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "15:26-30",
+              "loc": "13:26-30",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             },
@@ -492,7 +492,7 @@
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "15:34-57",
+              "loc": "13:34-57",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             },
@@ -506,7 +506,7 @@
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "20:20-24",
+              "loc": "18:20-24",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             },
@@ -520,7 +520,7 @@
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "20:28-45",
+              "loc": "18:28-45",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             }
@@ -528,9 +528,9 @@
           "usedExports": null,
           "providedExports": null,
           "optimizationBailout": [
-            "CommonJS bailout: this is used directly at 4:23-27",
-            "CommonJS bailout: this is used directly at 15:26-30",
-            "CommonJS bailout: this is used directly at 20:20-24"
+            "CommonJS bailout: this is used directly at 2:23-27",
+            "CommonJS bailout: this is used directly at 13:26-30",
+            "CommonJS bailout: this is used directly at 18:20-24"
           ],
           "depth": 1
         },
@@ -538,9 +538,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 4289,
+          "size": 4315,
           "sizes": {
-            "javascript": 4289
+            "javascript": 4315
           },
           "built": true,
           "codeGenerated": true,
@@ -591,7 +591,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./mutation",
-              "loc": "29:30-51",
+              "loc": "27:30-51",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             }
@@ -668,7 +668,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./query",
-              "loc": "30:27-45",
+              "loc": "28:27-45",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             }
@@ -738,7 +738,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./task",
-              "loc": "31:26-43",
+              "loc": "29:26-43",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             }
@@ -809,7 +809,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./user",
-              "loc": "32:26-43",
+              "loc": "30:26-43",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             }
@@ -1713,9 +1713,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 5763,
+      "size": 1460,
       "sizes": {
-        "javascript": 5763
+        "javascript": 1460
       },
       "built": true,
       "codeGenerated": true,
@@ -1774,7 +1774,7 @@
           "active": true,
           "explanation": "",
           "userRequest": null,
-          "loc": "4:23-27",
+          "loc": "2:23-27",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         },
@@ -1788,7 +1788,7 @@
           "active": true,
           "explanation": "",
           "userRequest": null,
-          "loc": "4:31-51",
+          "loc": "2:31-51",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         },
@@ -1802,7 +1802,7 @@
           "active": true,
           "explanation": "",
           "userRequest": null,
-          "loc": "15:26-30",
+          "loc": "13:26-30",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         },
@@ -1816,7 +1816,7 @@
           "active": true,
           "explanation": "",
           "userRequest": null,
-          "loc": "15:34-57",
+          "loc": "13:34-57",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         },
@@ -1830,7 +1830,7 @@
           "active": true,
           "explanation": "",
           "userRequest": null,
-          "loc": "20:20-24",
+          "loc": "18:20-24",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         },
@@ -1844,7 +1844,7 @@
           "active": true,
           "explanation": "",
           "userRequest": null,
-          "loc": "20:28-45",
+          "loc": "18:28-45",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         }
@@ -1852,9 +1852,9 @@
       "usedExports": null,
       "providedExports": null,
       "optimizationBailout": [
-        "CommonJS bailout: this is used directly at 4:23-27",
-        "CommonJS bailout: this is used directly at 15:26-30",
-        "CommonJS bailout: this is used directly at 20:20-24"
+        "CommonJS bailout: this is used directly at 2:23-27",
+        "CommonJS bailout: this is used directly at 13:26-30",
+        "CommonJS bailout: this is used directly at 18:20-24"
       ],
       "depth": 1
     },
@@ -2205,7 +2205,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./comment",
-          "loc": "28:29-49",
+          "loc": "26:29-49",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         }
@@ -2223,9 +2223,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 4289,
+      "size": 4315,
       "sizes": {
-        "javascript": 4289
+        "javascript": 4315
       },
       "built": true,
       "codeGenerated": true,
@@ -2275,7 +2275,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./mutation",
-          "loc": "29:30-51",
+          "loc": "27:30-51",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         }
@@ -2509,7 +2509,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./query",
-          "loc": "30:27-45",
+          "loc": "28:27-45",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         }
@@ -2578,7 +2578,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./task",
-          "loc": "31:26-43",
+          "loc": "29:26-43",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         }
@@ -2648,7 +2648,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./user",
-          "loc": "32:26-43",
+          "loc": "30:26-43",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         }
@@ -2741,11 +2741,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 96494
+          "size": 84905
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 96494,
+      "assetsSize": 84905,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -2763,11 +2763,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 96494
+          "size": 84905
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 96494,
+      "assetsSize": 84905,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
