@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # install applicaion dependencies
+      # install application dependencies
       - name: Install dependencies
         run: |
           npm install
@@ -57,7 +57,7 @@ jobs:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
-      - name: Set up Docker Buildx
+      - name: Set up Docker Build
         uses: docker/setup-buildx-action@v1
 
       - name: Login to DockerHub
@@ -79,6 +79,6 @@ jobs:
         with:
           image: ${{ secrets.DOCKERHUB_USERNAME }}/todo-api:latest
           run: |
-            echo "runing the docker image"
+            echo "running the docker image"
             echo "Testing the nodejs  app endpoints"
             echo ${{ steps.docker_build.outputs.digest }}
