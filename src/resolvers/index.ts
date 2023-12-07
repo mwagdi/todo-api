@@ -4,11 +4,10 @@ import { sign } from 'jsonwebtoken';
 import { Resolvers } from '../generated/graphql';
 import { Context } from '../types';
 import { checkIfUserLoggedIn, checkUserLogin } from '../utils';
+import * as Query from './query';
 
 const resolvers: Resolvers = {
-  Query: {
-    users: async (parent, args, { db }: Context) => await db.getUsers(),
-  },
+  Query,
   User: {
     tasks: async (parent, args, { db }: Context) =>
       await db.getTasks(parent.id),

@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "hash": "1b3a914d3d1a64bd828a",
+  "hash": "0b38688782f7bea2014a",
   "version": "5.89.0",
-  "time": 1041,
-  "builtAt": 1701944335856,
+  "time": 1056,
+  "builtAt": 1701967600304,
   "publicPath": "",
   "outputPath": "/usr/app/dist",
   "assetsByChunkName": {
@@ -15,13 +15,13 @@
     {
       "type": "asset",
       "name": "index.js",
-      "size": 77258,
-      "emitted": false,
-      "comparedForEmit": true,
+      "size": 80777,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "javascriptModule": false,
-        "size": 77258
+        "size": 80777
       },
       "chunkNames": [
         "server"
@@ -43,9 +43,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 24785,
+      "size": 25974,
       "sizes": {
-        "javascript": 24785
+        "javascript": 25974
       },
       "names": [
         "server"
@@ -58,7 +58,7 @@
         "index.js"
       ],
       "auxiliaryFiles": [],
-      "hash": "7b91b95ba14ad39ec6d4",
+      "hash": "58f4d8d13edaed253e95",
       "childrenByOrder": {},
       "id": "server",
       "siblings": [],
@@ -244,8 +244,8 @@
           "nameForCondition": "/usr/app/src/index.ts",
           "index": 0,
           "preOrderIndex": 0,
-          "index2": 11,
-          "postOrderIndex": 11,
+          "index2": 12,
+          "postOrderIndex": 12,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -317,9 +317,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 4840,
+          "size": 5838,
           "sizes": {
-            "javascript": 4840
+            "javascript": 5838
           },
           "built": true,
           "codeGenerated": true,
@@ -330,8 +330,8 @@
           "nameForCondition": "/usr/app/src/resolvers/index.ts",
           "index": 7,
           "preOrderIndex": 7,
-          "index2": 9,
-          "postOrderIndex": 9,
+          "index2": 10,
+          "postOrderIndex": 10,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -368,15 +368,170 @@
               "loc": "10:36-58",
               "moduleId": "./src/index.ts",
               "resolvedModuleId": "./src/index.ts"
+            },
+            {
+              "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "module": "./src/resolvers/index.ts",
+              "moduleName": "./src/resolvers/index.ts",
+              "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "resolvedModule": "./src/resolvers/index.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "2:23-27",
+              "moduleId": "./src/resolvers/index.ts",
+              "resolvedModuleId": "./src/resolvers/index.ts"
+            },
+            {
+              "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "module": "./src/resolvers/index.ts",
+              "moduleName": "./src/resolvers/index.ts",
+              "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "resolvedModule": "./src/resolvers/index.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "2:31-51",
+              "moduleId": "./src/resolvers/index.ts",
+              "resolvedModuleId": "./src/resolvers/index.ts"
+            },
+            {
+              "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "module": "./src/resolvers/index.ts",
+              "moduleName": "./src/resolvers/index.ts",
+              "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "resolvedModule": "./src/resolvers/index.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "13:26-30",
+              "moduleId": "./src/resolvers/index.ts",
+              "resolvedModuleId": "./src/resolvers/index.ts"
+            },
+            {
+              "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "module": "./src/resolvers/index.ts",
+              "moduleName": "./src/resolvers/index.ts",
+              "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "resolvedModule": "./src/resolvers/index.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "13:34-57",
+              "moduleId": "./src/resolvers/index.ts",
+              "resolvedModuleId": "./src/resolvers/index.ts"
+            },
+            {
+              "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "module": "./src/resolvers/index.ts",
+              "moduleName": "./src/resolvers/index.ts",
+              "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "resolvedModule": "./src/resolvers/index.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "18:20-24",
+              "moduleId": "./src/resolvers/index.ts",
+              "resolvedModuleId": "./src/resolvers/index.ts"
+            },
+            {
+              "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "module": "./src/resolvers/index.ts",
+              "moduleName": "./src/resolvers/index.ts",
+              "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "resolvedModule": "./src/resolvers/index.ts",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "18:28-45",
+              "moduleId": "./src/resolvers/index.ts",
+              "resolvedModuleId": "./src/resolvers/index.ts"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: this is used directly at 2:23-27",
+            "CommonJS bailout: this is used directly at 13:26-30",
+            "CommonJS bailout: this is used directly at 18:20-24"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 191,
+          "sizes": {
+            "javascript": 191
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/query/index.ts",
+          "name": "./src/resolvers/query/index.ts",
+          "nameForCondition": "/usr/app/src/resolvers/query/index.ts",
+          "index": 11,
+          "preOrderIndex": 11,
+          "index2": 9,
+          "postOrderIndex": 9,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "issuerName": "./src/resolvers/index.ts",
+          "issuerPath": [
+            {
+              "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/index.ts",
+              "name": "./src/index.ts",
+              "id": "./src/index.ts"
+            },
+            {
+              "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "name": "./src/resolvers/index.ts",
+              "id": "./src/resolvers/index.ts"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./src/resolvers/query/index.ts",
+          "issuerId": "./src/resolvers/index.ts",
+          "chunks": [
+            "server"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "module": "./src/resolvers/index.ts",
+              "moduleName": "./src/resolvers/index.ts",
+              "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+              "resolvedModule": "./src/resolvers/index.ts",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./query",
+              "loc": "29:27-45",
+              "moduleId": "./src/resolvers/index.ts",
+              "resolvedModuleId": "./src/resolvers/index.ts"
             }
           ],
           "usedExports": null,
           "providedExports": [
             "__esModule",
-            "default"
+            "users"
           ],
           "optimizationBailout": [],
-          "depth": 1
+          "depth": 2
         },
         {
           "type": "module",
@@ -393,10 +548,10 @@
           "identifier": "/usr/app/node_modules/graphql-tag/loader.js!/usr/app/src/schema.graphql",
           "name": "./src/schema.graphql",
           "nameForCondition": "/usr/app/src/schema.graphql",
-          "index": 11,
-          "preOrderIndex": 11,
-          "index2": 10,
-          "postOrderIndex": 10,
+          "index": 12,
+          "preOrderIndex": 12,
+          "index2": 11,
+          "postOrderIndex": 11,
           "cacheable": true,
           "optional": false,
           "orphan": false,
@@ -522,7 +677,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "../utils",
-              "loc": "5:16-35",
+              "loc": "28:16-35",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             }
@@ -715,7 +870,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "bcryptjs",
-              "loc": "3:19-38",
+              "loc": "26:19-38",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             },
@@ -932,7 +1087,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "jsonwebtoken",
-              "loc": "4:23-46",
+              "loc": "27:23-46",
               "moduleId": "./src/resolvers/index.ts",
               "resolvedModuleId": "./src/resolvers/index.ts"
             },
@@ -986,8 +1141,8 @@
       "nameForCondition": "/usr/app/src/index.ts",
       "index": 0,
       "preOrderIndex": 0,
-      "index2": 11,
-      "postOrderIndex": 11,
+      "index2": 12,
+      "postOrderIndex": 12,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1269,9 +1424,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 4840,
+      "size": 5838,
       "sizes": {
-        "javascript": 4840
+        "javascript": 5838
       },
       "built": true,
       "codeGenerated": true,
@@ -1282,8 +1437,8 @@
       "nameForCondition": "/usr/app/src/resolvers/index.ts",
       "index": 7,
       "preOrderIndex": 7,
-      "index2": 9,
-      "postOrderIndex": 9,
+      "index2": 10,
+      "postOrderIndex": 10,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1319,14 +1474,99 @@
           "loc": "10:36-58",
           "moduleId": "./src/index.ts",
           "resolvedModuleId": "./src/index.ts"
+        },
+        {
+          "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "2:23-27",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
+        },
+        {
+          "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "2:31-51",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
+        },
+        {
+          "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "13:26-30",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
+        },
+        {
+          "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "13:34-57",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
+        },
+        {
+          "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "18:20-24",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
+        },
+        {
+          "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "18:28-45",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
         }
       ],
       "usedExports": null,
-      "providedExports": [
-        "__esModule",
-        "default"
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: this is used directly at 2:23-27",
+        "CommonJS bailout: this is used directly at 13:26-30",
+        "CommonJS bailout: this is used directly at 18:20-24"
       ],
-      "optimizationBailout": [],
       "depth": 1
     },
     {
@@ -1394,7 +1634,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "../utils",
-          "loc": "5:16-35",
+          "loc": "28:16-35",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         }
@@ -1424,10 +1664,10 @@
       "identifier": "/usr/app/node_modules/graphql-tag/loader.js!/usr/app/src/schema.graphql",
       "name": "./src/schema.graphql",
       "nameForCondition": "/usr/app/src/schema.graphql",
-      "index": 11,
-      "preOrderIndex": 11,
-      "index2": 10,
-      "postOrderIndex": 10,
+      "index": 12,
+      "preOrderIndex": 12,
+      "index2": 11,
+      "postOrderIndex": 11,
       "cacheable": true,
       "optional": false,
       "orphan": false,
@@ -1675,7 +1915,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "bcryptjs",
-          "loc": "3:19-38",
+          "loc": "26:19-38",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         },
@@ -1754,7 +1994,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "jsonwebtoken",
-          "loc": "4:23-46",
+          "loc": "27:23-46",
           "moduleId": "./src/resolvers/index.ts",
           "resolvedModuleId": "./src/resolvers/index.ts"
         },
@@ -1775,6 +2015,75 @@
       ],
       "usedExports": null,
       "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 191,
+      "sizes": {
+        "javascript": 191
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/query/index.ts",
+      "name": "./src/resolvers/query/index.ts",
+      "nameForCondition": "/usr/app/src/resolvers/query/index.ts",
+      "index": 11,
+      "preOrderIndex": 11,
+      "index2": 9,
+      "postOrderIndex": 9,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+      "issuerName": "./src/resolvers/index.ts",
+      "issuerPath": [
+        {
+          "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/index.ts",
+          "name": "./src/index.ts",
+          "id": "./src/index.ts"
+        },
+        {
+          "identifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "name": "./src/resolvers/index.ts",
+          "id": "./src/resolvers/index.ts"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/resolvers/query/index.ts",
+      "issuerId": "./src/resolvers/index.ts",
+      "chunks": [
+        "server"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "module": "./src/resolvers/index.ts",
+          "moduleName": "./src/resolvers/index.ts",
+          "resolvedModuleIdentifier": "/usr/app/node_modules/ts-loader/index.js??ruleSet[1].rules[0]!/usr/app/src/resolvers/index.ts",
+          "resolvedModule": "./src/resolvers/index.ts",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./query",
+          "loc": "29:27-45",
+          "moduleId": "./src/resolvers/index.ts",
+          "resolvedModuleId": "./src/resolvers/index.ts"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "__esModule",
+        "users"
+      ],
       "optimizationBailout": [],
       "depth": 2
     },
@@ -1858,11 +2167,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 77258
+          "size": 80777
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 77258,
+      "assetsSize": 80777,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
@@ -1880,11 +2189,11 @@
       "assets": [
         {
           "name": "index.js",
-          "size": 77258
+          "size": 80777
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 77258,
+      "assetsSize": 80777,
       "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
       "auxiliaryAssetsSize": 0,
