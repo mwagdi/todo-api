@@ -12,4 +12,4 @@ EXPOSE 4000
 
 #CMD ["npm", "run", "migrate:run"]
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]
