@@ -57,8 +57,8 @@ jobs:
           HD_EXAMPLE: "Hello World"
 
       # run migrations
-      - name: Migration
-        run: npm run migrate:run
+#      - name: Migration
+#        run: npm run migrate:run
 
   push_to_Docker_Hub:
     # The type of runner that the job will run on
@@ -99,3 +99,4 @@ jobs:
             echo "running the docker image"
             echo "Testing the nodejs  app endpoints"
             echo ${{ steps.docker_build.outputs.digest }}
+            node test_ci.js
