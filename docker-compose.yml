@@ -11,8 +11,6 @@ services:
       - db
     volumes:
       - .:/usr/app
-    environment:
-      - SOME_VAR="Some variable"
 
   db:
     container_name: todo-postgres
@@ -22,8 +20,8 @@ services:
     volumes:
       - data:/data/db
     environment:
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_PASSWORD=454612128e6173bf7d4ac3523a04253ad4763fbe1300943917ac19ef49a035d7
+      - POSTGRES_DB=degp7j928drcvm
 
 volumes:
   data: {}
