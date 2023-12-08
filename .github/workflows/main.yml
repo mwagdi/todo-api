@@ -17,6 +17,8 @@ jobs:
   build_test:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      EXAMPLE: "Hello World"
     strategy:
       matrix:
         node-version: [20.x]
@@ -61,7 +63,9 @@ jobs:
 #        run: npm run migrate:run
       # test ci
       - name: Test CI
-        run: node dist/test_ci.js
+        run: |
+          echo ${{ secrets.HEROKU_API_KEY }}
+          node dist/test_ci.js
 
   push_to_Docker_Hub:
     # The type of runner that the job will run on
