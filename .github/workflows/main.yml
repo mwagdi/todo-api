@@ -45,10 +45,6 @@ jobs:
       - name: Test
         run: npm run test
 
-      # test the app
-      - name: Migration
-        run: npm run migrate:run
-
       # deploy to heroku
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
@@ -59,6 +55,10 @@ jobs:
           usedocker: true
         env:
           HD_EXAMPLE: "Hello World"
+
+      # run migrations
+      - name: Migration
+        run: npm run migrate:run
 
   push_to_Docker_Hub:
     # The type of runner that the job will run on
