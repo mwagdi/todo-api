@@ -62,8 +62,8 @@ jobs:
           usedocker: true
 
       # run migrations
-      - name: Migration
-        run: npm run migrate:run
+#      - name: Migration
+#        run: npm run migrate:run
 
       # test ci
 #      - name: Test CI
