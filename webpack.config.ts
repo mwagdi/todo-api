@@ -7,12 +7,16 @@ import nodeExternals from 'webpack-node-externals';
 const config: Configuration = {
   name: 'server',
   entry: {
-    server: './src/index.ts',
+    index: './src/index.ts',
+    test_ci: './src/test_ci.ts',
+    migrate: './src/db/migrate.ts',
   },
-  mode: (process.env.NODE_ENV as 'production' | 'development' | undefined) ?? 'development',
+  mode:
+    (process.env.NODE_ENV as 'production' | 'development' | undefined) ??
+    'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
+    filename: '[name].js',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],

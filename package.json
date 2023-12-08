@@ -9,7 +9,7 @@
     "lint": "eslint src/**/*.ts",
     "start": "npm run build && node dist/index.js",
     "migrate": "knex migrate:make $npm_config_name --migrations-directory migrations",
-    "migrate:run": "ts-node src/db/migrate.ts",
+    "migrate:run": "node dist/migrate.js",
     "test": "jest",
     "test:watch": "jest --watch"
   },
