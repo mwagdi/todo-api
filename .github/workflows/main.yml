@@ -18,7 +18,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      EXAMPLE: "Hello World"
+      EXAMPLE: "Hello Docker"
     strategy:
       matrix:
         node-version: [20.x]
@@ -55,8 +55,8 @@ jobs:
           heroku_app_name: "mwagdi-todo-api"
           heroku_email: "mahmoudwagdi86@gmail.com"
           usedocker: true
-        env:
-          HD_EXAMPLE: "Hello World"
+#        env:
+#          HD_EXAMPLE: "Hello World"
 
       # run migrations
 #      - name: Migration
