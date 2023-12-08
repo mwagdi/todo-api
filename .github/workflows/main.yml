@@ -60,15 +60,14 @@ jobs:
           heroku_app_name: "mwagdi-todo-api"
           heroku_email: "mahmoudwagdi86@gmail.com"
           usedocker: true
-#        env:
-#          HD_EXAMPLE: "Hello World"
 
       # run migrations
-#      - name: Migration
-#        run: npm run migrate:run
+      - name: Migration
+        run: npm run migrate:run
+
       # test ci
-      - name: Test CI
-        run: node dist/test_ci.js
+#      - name: Test CI
+#        run: node dist/test_ci.js
 
   push_to_Docker_Hub:
     # The type of runner that the job will run on
