@@ -1,8 +1,4 @@
-import { config } from 'dotenv';
-
 import MyDatabase from './MyDatabase';
-
-config();
 
 const knexConfig = {
   client: 'pg',

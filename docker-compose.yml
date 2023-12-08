@@ -11,8 +11,6 @@ services:
       - db
     volumes:
       - .:/usr/app
-    environment:
-      - EXAMPLE=999
 
   db:
     container_name: todo-postgres

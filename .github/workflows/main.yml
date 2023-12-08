@@ -57,6 +57,8 @@ jobs:
           heroku_app_name: "mwagdi-todo-api"
           heroku_email: "mahmoudwagdi86@gmail.com"
           usedocker: true
+        env:
+          HD_EXAMPLE: "Hello World"
 
   push_to_Docker_Hub:
     # The type of runner that the job will run on
