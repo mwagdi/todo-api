@@ -7,7 +7,7 @@ const knexConfig = {
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    // ssl: { rejectUnauthorized: false },
+    ssl: { rejectUnauthorized: false },
   },
   migrations: {
     tableName: 'knex_migrations',
