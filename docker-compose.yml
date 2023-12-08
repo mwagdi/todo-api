@@ -11,6 +11,8 @@ services:
       - db
     volumes:
       - .:/usr/app
+    environment:
+      - SOME_VAR="Some variable"
 
   db:
     container_name: todo-postgres

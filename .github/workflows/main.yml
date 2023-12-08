@@ -64,7 +64,7 @@ jobs:
       # test ci
       - name: Test CI
         run: |
-          echo ${{ secrets.HEROKU_API_KEY }}
+          echo ${{ vars.DB_USER }}
           node dist/test_ci.js
 
   push_to_Docker_Hub:
